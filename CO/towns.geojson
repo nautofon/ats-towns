@@ -5,6 +5,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-108.4907,37.3933]},"properties":{"name":"Cortez"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-107.5063,40.4943]},"properties":{"name":"Craig"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-108.8961,40.2705]},"properties":{"name":"Dinosaur"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.3426,39.0990]},"properties":{"name":"Divide"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.9784,38.5173]},"properties":{"name":"Eads"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.9425,39.2914]},"properties":{"name":"Fairplay"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.3438,38.0868]},"properties":{"name":"Granada"}},

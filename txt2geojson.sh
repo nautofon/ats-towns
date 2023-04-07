@@ -2,9 +2,35 @@
 
 if [ $# -ne 1 ]
 then
-  echo "Usage: $0 <path to state dir>"
+  echo "Usage: $0 <path to state dir>|all"
   exit 1
 fi
+
+temp_to_geojson () {
+  temp="$1"
+  json="$2"
+  echo '{"type":"FeatureCollection","features":[' > "$json"
+  sed -e '$s/.$//' "$temp" >> "$json"
+  echo ']}' >> "$json"
+  rm -f "$temp"
+}
+
+if [ "$1" = "all" ]
+then
+  TEMP=`mktemp` || exit 1
+  DIR=`dirname "$0"`
+  find "$DIR" -regex "$DIR/[A-Z][A-Z]/towns.geojson" |
+  sed -e 's/.*\(..\).towns.geojson$/\1/' | sort |
+  while read -r state_id
+  do
+    sed -E -e '1d; $d; s/,?$/,/' \
+      -e "s/(\"properties\":{)/\1\"state\":\"$state_id\",/" \
+      "$DIR/$state_id/towns.geojson" >> "$TEMP"
+  done
+  temp_to_geojson "$TEMP" "$DIR/all-towns.geojson"
+  exit 0
+fi
+
 
 IN="$1/towns.txt"
 OUT="$1/towns.geojson"
@@ -36,8 +62,11 @@ do
   printf '{"type":"Feature","geometry":%s,"properties":{"name":"%s"}},\n' "$geometry" "$name"
 done > "$TEMP"
 
-echo '{"type":"FeatureCollection","features":[' > "$OUT"
-sed -e '$s/.$//' "$TEMP" >> "$OUT"
-echo ']}' >> "$OUT"
+if [ `wc -l "$IN" | awk '{print $1}'` -ne `wc -l "$TEMP" | awk '{print $1}'` ]
+then
+  echo "Converting '$IN' using '`which cct`' failed."
+  rm -f "$TEMP"
+  exit 1
+fi
 
-rm -f "$TEMP"
+temp_to_geojson "$TEMP" "$OUT"

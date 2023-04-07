@@ -9,25 +9,22 @@ to add an extra layer showing scenery towns.
 ### Criteria for scenery towns
 
 A "scenery town" in ATS is defined here as any settlement not marked by name
-on the in-game world map. In this repository, settlements are generally only
-included if they meet all of the following criteria:
+on the in-game world map. For this repository, such settlements are defined
+as locations which meet both of the following criteria:
 
-- Buildings exist in the game world.
-- The place name exists in the game world. This usually means the exact name
-  must appear on a road sign.
-- Buildings and the place name should be independent of each other. In other
-  words, if an individual building has a specific name, that particular name
-  is not considered to be that of a scenery town.
+- Buildings exist in the game world.  
+  *Any kind of buildings will do, even commercial or abandoned ones.*
 
-Since improved navigation is a primary goal here, place names of high
-importance might be included here even when not all criteria are met.
-In particular, named junctions are currently included even where there is
-no real settlement.
+- The place name exists in the game world.  
+  *This usually means the exact name must appear on a green road sign.
+  Any deduction of place names from e.g. building names or other indirect
+  sources should be avoided, except where the situation is super obvious.*
 
-A corner case that I don't believe is adequately covered by these criteria
-yet are purely touristic features, e.g. in Wyoming "Devils Tower" (currently
-included) vs. "South Pass" (on WYO 28 south of Lander; _not_ currently
-included). Need to think about this one.
+Additionally, the following locations are included if named because of their
+navigational value, even where no buildings exist:
+
+- Highway junctions
+- Mountain passes
 
 I'm absolutely open to discussing changes to these criteria. The
 [ATS Slippy Map thread](https://forum.scssoft.com/viewtopic.php?t=318267)
@@ -39,5 +36,9 @@ might be the best place to have such a discussion. Feel free to tag me there
 If this collection turns out to be useful, I intend to complete it for most
 of ATS eventually.
 
+At least mountain passes should probably be in another dataset instead of
+this one. They might be removed here if such a dataset become available
+separately in future.
+
 Beyond that, it might be interesting to expand this idea to other POIs,
-such as mountain passes or viewpoints.
+such as historical markers, rest areas, or viewpoints.

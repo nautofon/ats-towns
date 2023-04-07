@@ -21,7 +21,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-104.5117,44.4034]},"properties":{"name":"Moorcroft"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-110.3419,44.2868]},"properties":{"name":"Moran Jct"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-107.3664,42.4579]},"properties":{"name":"Muddy Gap Jct"}},
-{"type":"Feature","geometry":{"type":"Point","coordinates":[-104.9343,42.7154]},"properties":{"name":"Orin Jct"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.1117,42.7341]},"properties":{"name":"Orin Jct"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-106.8735,43.1365]},"properties":{"name":"Powder River"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-108.8368,42.0622]},"properties":{"name":"Reliance"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-106.0629,42.0494]},"properties":{"name":"Rock River"}},

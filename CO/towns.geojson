@@ -1,6 +1,8 @@
 {"type":"FeatureCollection","features":[
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-104.4991,39.6211]},"properties":{"name":"Aurora"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.5862,39.8449]},"properties":{"name":"Berthoud Pass"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.3568,38.3201]},"properties":{"name":"Bristol"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-107.9937,37.9041]},"properties":{"name":"Camp Bird"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.3943,38.7418]},"properties":{"name":"Cheyenne Wells"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-108.4907,37.3933]},"properties":{"name":"Cortez"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-107.5063,40.4943]},"properties":{"name":"Craig"}},
@@ -8,6 +10,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.3426,39.0990]},"properties":{"name":"Divide"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.9784,38.5173]},"properties":{"name":"Eads"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.9425,39.2914]},"properties":{"name":"Fairplay"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-108.6008,39.1920]},"properties":{"name":"Fruita"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.3438,38.0868]},"properties":{"name":"Granada"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-106.1622,39.9938]},"properties":{"name":"Granby"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.9910,40.1660]},"properties":{"name":"Grand Lake"}},
@@ -15,6 +18,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.3441,41.0499]},"properties":{"name":"Julesburg"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-103.0810,38.8298]},"properties":{"name":"Kit Carson"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-103.5537,37.9707]},"properties":{"name":"La Junta"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.3767,37.6105]},"properties":{"name":"La Veta Pass"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-103.6270,39.1783]},"properties":{"name":"Limon"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-108.8877,39.2897]},"properties":{"name":"Loma"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-108.1245,40.5206]},"properties":{"name":"Maybell"}},
@@ -24,6 +28,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-107.1236,37.2362]},"properties":{"name":"Pagosa Springs"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.3457,38.4481]},"properties":{"name":"Parkdale"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-106.1462,38.5098]},"properties":{"name":"Poncha Springs"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-107.7709,37.6655]},"properties":{"name":"Red Mountain Pass"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-106.1685,38.0032]},"properties":{"name":"Saguache"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.2098,38.4839]},"properties":{"name":"Sheridan Lake"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-104.5405,37.2414]},"properties":{"name":"Starkville"}},
@@ -31,5 +36,6 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-104.8591,37.6342]},"properties":{"name":"Walsenburg"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-104.2464,40.1152]},"properties":{"name":"Wiggins"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-103.2077,38.8707]},"properties":{"name":"Wild Horse"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.9922,39.9280]},"properties":{"name":"Winter Park"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.2313,40.0816]},"properties":{"name":"Wray"}}
 ]}

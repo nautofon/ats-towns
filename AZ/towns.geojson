@@ -1,2 +1,18 @@
 {"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.4958,35.2858]},"properties":{"name":"Ash Fork"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.6499,36.5688]},"properties":{"name":"Bitter Springs"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.3919,35.8968]},"properties":{"name":"Cameron"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.6113,36.5150]},"properties":{"name":"Chinle"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.0264,32.7761]},"properties":{"name":"Dateland"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-110.7568,33.3843]},"properties":{"name":"Globe"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.3296,33.0030]},"properties":{"name":"Morenci"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-113.6633,35.3365]},"properties":{"name":"Peach Springs"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.7756,33.9759]},"properties":{"name":"Pinetop/Lakeside"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-113.8290,33.5831]},"properties":{"name":"Quartzsite"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.9378,35.3938]},"properties":{"name":"Seligman"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.1762,34.1471]},"properties":{"name":"Springerville"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.4220,34.5340]},"properties":{"name":"St. Johns"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.2269,37.0416]},"properties":{"name":"Teec Nos Pos"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.1095,35.6795]},"properties":{"name":"Valle"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.9861,34.0619]},"properties":{"name":"Wickenburg"}}
 ]}

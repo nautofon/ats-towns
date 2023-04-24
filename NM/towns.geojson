@@ -17,5 +17,6 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-107.5309,35.1104]},"properties":{"name":"Sky City"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-102.8209,34.3646]},"properties":{"name":"Texico"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-106.5351,36.8460]},"properties":{"name":"Tierra Amarilla"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.9860,33.1641]},"properties":{"name":"Tularosa"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.1377,34.5616]},"properties":{"name":"Vaughn"}}
 ]}

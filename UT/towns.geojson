@@ -1,2 +1,23 @@
 {"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.4777,37.3537]},"properties":{"name":"Bluff"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.5050,39.4712]},"properties":{"name":"Delta"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-110.3148,40.3376]},"properties":{"name":"Duchense"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.7656,40.4323]},"properties":{"name":"Fort Duchesne"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.2352,41.9737]},"properties":{"name":"Garden City"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.2774,40.5548]},"properties":{"name":"Heber City"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.1941,39.2266]},"properties":{"name":"Holden"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-113.0687,37.3749]},"properties":{"name":"Hurricane"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.3985,37.0903]},"properties":{"name":"Kanab"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.9640,40.8121]},"properties":{"name":"Knolls"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.0636,41.7201]},"properties":{"name":"Laketown"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.8620,37.2688]},"properties":{"name":"Mexican Hat"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.0212,38.0151]},"properties":{"name":"Modena"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.2626,37.9400]},"properties":{"name":"Monticello"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.3844,37.8064]},"properties":{"name":"Panguitch"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.3124,40.7808]},"properties":{"name":"Park City"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.0168,38.8151]},"properties":{"name":"Richfield"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.9913,39.3729]},"properties":{"name":"Scipio"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.6135,40.0124]},"properties":{"name":"Spanish Fork"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.1653,41.8845]},"properties":{"name":"Tremonton"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-113.8511,40.8664]},"properties":{"name":"Wendover"}}
 ]}

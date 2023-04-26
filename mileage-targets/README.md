@@ -48,4 +48,4 @@ as do a number of other oddities (such as Houston, Texas, which in 1.47
 is defined by position rather than by node UID, but which for some reason
 still has a non-zero distance offset).
 
-![](https://raw.githubusercontent.com/nautofon/ats-towns/main/example-julesburg.jpg)
+![](https://raw.githubusercontent.com/nautofon/ats-towns/main/mileage-targets/example-julesburg.jpg)

@@ -27,7 +27,7 @@ public class NodeList {
     var uids = new List<ulong>();
     using( var reader = new StreamReader(inPath) ) {
       while (! reader.EndOfStream) {
-        string[] cols = reader.ReadLine().Split(';');
+        string[] cols = reader.ReadLine().Split(',');
         if (cols.Length < 7 || cols[6].Equals("")) { continue; }
         try {
           uids.Add( Convert.ToUInt64(cols[6]) );

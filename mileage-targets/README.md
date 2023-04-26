@@ -9,9 +9,9 @@ Resolving a list of node UIDs to positions is possible using the
 [**ts-map**](https://github.com/dariowouters/ts-map) ATS map renderer.
 
 Note that the positions of many mileage targets are intentionally wrong.
-Since the game only uses them for the distance signs, they can get away with
+Since SCS only uses them for the distance signs, they can get away with
 simply adding a fixed "distance offset" to the calculated distance to a target.
-But when you actually draw the targets on a map, you will see that some
+But when you actually plot the targets on a map, you will see that some
 targets are not positioned where they should be geographically.
 Even when the distance offset is zero, the position may not be accurate.
 These situations are not always obvious.

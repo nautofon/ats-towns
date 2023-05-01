@@ -1,0 +1,15 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.2012,39.5374]},"properties":{"name":"Austin"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.2205,41.0473]},"properties":{"name":"Battle Mtn"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-116.6533,36.7737]},"properties":{"name":"Beatty"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.6337,41.9690]},"properties":{"name":"Denio Jct"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-116.9105,37.3694]},"properties":{"name":"Goldfield"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-115.4286,36.4438]},"properties":{"name":"Indian Spgs"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.8340,37.6122]},"properties":{"name":"Mazany Ck"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.4439,41.9875]},"properties":{"name":"McDermitt"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-116.2215,42.0212]},"properties":{"name":"Owyhee"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.4148,37.9734]},"properties":{"name":"Panaca"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-115.5455,37.4708]},"properties":{"name":"Rachel"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-119.5916,39.6596]},"properties":{"name":"Sparks"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.9474,41.2043]},"properties":{"name":"Wells"}}
+]}

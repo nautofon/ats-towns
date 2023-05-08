@@ -6,11 +6,9 @@ For inclusion criteria etc., see the [repository root](../../../)'s readme.
 
 **These files are incomplete.**
 
-They are simply copies of those mileage targets for Utah that look like they
-might represent scenery towns. None of them have actually been verified in
-the game yet. A search for additional towns that have no mileage targets
-hasn't been undertaken, either, even though such places are known to exist
-in Utah.
+Specifically, the following road sections in this state have so far not been
+manually searched for scenery towns. Only mileage target data is available.
+Pull requests to add any missing towns are welcome.
 
-This is meant as a test of the suitability of the *positions* contained
-in the mileage targets dataset for representing scenery towns on a map.
+- **I-70** btwn I-15 and Salina
+- everything south of I-70

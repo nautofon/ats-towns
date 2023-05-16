@@ -10,5 +10,6 @@ Specifically, the following road sections in this state have so far not been
 manually searched for scenery towns. Only mileage target data is available.
 Pull requests to add any missing towns are welcome.
 
+- **I-15** btwn Arizona state line and SR-9
 - **I-70** btwn I-15 and Salina
-- everything south of I-70
+- **US 89** btwn Arizona state line and I-70

@@ -35,6 +35,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-114.5953,47.2653]},"properties":{"name":"St Regis"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-115.6840,48.5144]},"properties":{"name":"Troy"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-113.7970,48.5981]},"properties":{"name":"West Glacier"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.1553,44.9686]},"properties":{"name":"West Yellowstone"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-110.9315,46.6235]},"properties":{"name":"White Sulphur Springs"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-105.5056,48.1651]},"properties":{"name":"Wolf Point"}}
 ]}

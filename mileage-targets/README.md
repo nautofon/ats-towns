@@ -1,6 +1,6 @@
 ## Distance sign mileage targets
 
-ATS 1.47
+ATS 1.48
 
 This data is read directly from the game files.
 The file `def.scs/def/sign/mileage_targets.sii` provides the list of targets,

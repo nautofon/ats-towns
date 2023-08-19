@@ -1,6 +1,6 @@
 ## ATS scenery towns in Montana
 
-ATS 1.47
+ATS 1.48
 
 For inclusion criteria etc., see the [repository root](../../../)'s readme.
 

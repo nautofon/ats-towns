@@ -1,6 +1,6 @@
 ## ATS scenery towns in Washington
 
-ATS 1.47
+ATS 1.49
 
 For inclusion criteria etc., see the [repository root](../../../)'s readme.
 

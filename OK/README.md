@@ -1,6 +1,6 @@
 ## ATS scenery towns in Oklahoma
 
-ATS 1.48
+ATS 1.49
 
 For inclusion criteria etc., see the [repository root](../../../)'s readme.
 

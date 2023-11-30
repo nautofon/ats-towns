@@ -73,6 +73,8 @@ bc_grandfork,"BC Grand Forks","Grand Forks BC",,-83196.02,-64822.18,297621054164
 bc_penticton,"BC Penticton",Penticton,,-87287.81,-66291.31,3078285731677602015,-1,63
 bc_vancouver,"BC Vancouver","Vancouver BC",,-98611.11,-71086.92,2880602646589540076,-1,50
 ca_alturas,"CA Alturas",Alturas,,-102324.70,-28054.00,2640498185977987072,-1,0
+ca_benton,"CA Benton",Benton,Jct,,,5628404799656097363,-1,0
+ca_bishop,"CA Bishop",Bishop,,,,5628404817058203272,-1,0
 ca_blythe,"CA Blythe",Blythe,,-87116.87,20803.77,458571364645142528,-1,0
 ca_burney,"CA Burney",Burney,,-107672.20,-26612.91,3296760736085197518,-1,0
 ca_36x44,"CA CA-36 x CA-44","Jct CA-44",,-105478.50,-23048.26,4448830531849103350,-1,0
@@ -81,51 +83,66 @@ ca_corning,"CA Corning",Corning,,-111497.50,-21316.51,4448904991415422939,-1,2
 ca_crescity,"CA Crescent City","Crescent City",,-116012.40,-35109.19,2732383273107193856,-1,0
 ca_elcentro,"CA El Centro","El Centro",,-92005.63,24698.31,3752637636947410947,-1,0
 ca_eureka,"CA Eureka",Eureka,,-118667.90,-27856.18,4840225355464125552,-1,0
+ca_fresno,"CA Fresno",Fresno,,-106050.61,275.72,,25,1
+ca_gilroy,"CA Gilroy",Gilroy,,-112877.33,-3403.63,,40,0
 ca_hatfield,"CA Hatfield",Hatfield,,-105212.40,-31344.54,2839425178940473347,-1,0
 ca_hiouchi,"CA Hiouchi",Hiouchi,,-114195.20,-33605.56,2972953001024946176,130,0
 ca_hopland,"CA Hopland",Hopland,,-117093.20,-18260.96,4840256638344963137,-1,0
 ca_i10us95,"CA I-10 x US-95",Jct,,-87226.73,21016.05,457846050993405986,50,0
 ca_i5xi80,"CA I-5 x I-80",Jct,,-111615.55,-15904.23,,60,0
 ca_i5xus50,"CA I-5 x US-50","Jct US-50",,-111498.87,-14346.78,,75,0
+ca_independe,"CA Independence",Independence,,,,5683228150292807680,-1,0
 ca_janesvill,"CA Janesville",Janesville,,-102591.20,-19511.50,4448830535070333148,-1,0
 ca_lassenpk,"CA Lassen Park","Lassen Park",,-106505.50,-25102.75,4448830533526822555,-1,0
 ca_laytonvil,"CA Laytonville",Laytonville,,-116659.30,-21505.31,4448933458127300221,-1,0
-ca_leevining,"CA Lee Vining","Lee Vining",,,,5503862913990534773,-1,0
+ca_leevining,"CA Lee Vining","Lee Vining",,,,5628404800096497840,-1,0
 ca_losangele,"CA Los Angeles","Los Angeles",,-102033.64,16525.60,,100,2
+ca_meyers,"CA Meyers",Meyers,,,,5628404819729995322,-1,0
+ca_modesto,"CA Modesto",Modesto,,,,5628404816034834701,-1,0
 ca_mtshasta,"CA Mt Shasta","Mt Shasta",,-105179.40,-25671.15,4448830531060572761,-1,82
 ca_napa,"CA Napa",Napa,,-114034.30,-17489.92,4840278782885962073,-1,12
 ca_needles,"CA Needles",Needles,,-85255.83,14828.05,448279354507984900,-1,0
 ca_novato,"CA Novato",Novato,,-116738.80,-14390.25,4840256639422904651,-1,2
 canv_sl80,"CA NV I-80 Border","State Line",,-105016.70,-18875.55,4840289914061294630,-1,0
 ca_nv_sl395n,"CA NV US-395 Border N","State Line",,-101917.40,-18254.68,4448830532910267181,-1,0
-ca_oakland,"CA Oakland",Oakland,,-113232.90,-8517.26,437484008520476411,-1,0
+ca_nv_sl395s,"CA NV US-395 Border S","Nevada State Line","Topaz Lake",,,5628404816823343853,-1,0
+ca_oakland,"CA Oakland",Oakland,,,,,200,1
 ca_oldstatio,"CA Old Station","Old Station",,-105380.70,-25638.25,4448830531689718228,-1,0
 ca_or_sl_101,"CA OR US-101 Border","CA State Line","OR State Line",-114824.20,-36478.77,4448947631682945407,-1,0
 ca_or_sl_199,"CA OR US-199 Border","CA State Line","OR State Line",-113365.70,-35258.52,4448954451382173979,-1,0
 ca_or_sl_395,"CA OR US-395 Border","CA State Line","OR State Line",-100892.90,-29823.82,4448989325971359009,-1,0
 ca_or_sl_97,"CA OR US-97 Border","CA State Line","OR State Line",-107251.90,-31876.11,4448967028766082710,-1,0
 ca_petaluma,"CA Petaluma",Petaluma,,-116641.10,-15925.31,4840256639984939187,-1,2
+ca_placervil,"CA Placerville",Placerville,,,,5628404816273894234,-1,0
 ca_redding,"CA Redding",Redding,,-111812.50,-25883.98,4841676796667586917,-1,0
 ca_sacrament,"CA Sacramento",Sacramento,,-111400.41,-14854.66,,10,2
+ca_salinas,"CA Salinas",Salinas,,-113318.72,-684.40,,40,0
 ca_san_diego,"CA San Diego","San Diego",,-99340.50,24826.79,506163222192390145,-1,2
 ca_sanfran,"CA San Francisco","San Francisco",,-114811.10,-9232.54,437484009875237188,-1,0
+ca_sanjose1,"CA San Jose 1","San Jose",,-113976.48,-6199.90,,40,0
 ca_sanrafael,"CA San Rafael","San Rafael",,-116484.74,-13738.18,,20,2
+ca_santacruz,"CA Santa Cruz","Santa Cruz",,,,5628404835177622606,-1,0
 ca_sonoma,"CA Sonoma",Sonoma,,-114019.40,-17532.45,4840278781342458208,-1,4
-ca_stockton,"CA Stockton",Stockton,,-110875.30,-10032.39,437146940619496851,-1,0
+ca_sthlktaho,"CA South Lake Tahoe","Lake Tahoe","South Lake Tahoe",,,5628404817108557453,-1,0
+ca_stockton,"CA Stockton",Stockton,,-109454.58,-10367.37,,50,0
 ca_susanvill,"CA Susanville",Susanville,,-103857.90,-22200.96,4448830535040970282,-1,0
+ca_tiogapass,"CA Tioga Pass Yosemite","Tioga Pass",Yosemite,-103219.49,-6606.04,,15,0
 ca_truckee,"CA Truckee",Truckee,,-106395.10,-16320.08,4840289915189558308,-1,0
 ca_ukiah,"CA Ukiah",Ukiah,,-117154.40,-19308.45,4840239750936201556,-1,0
 ca_u101xc299,"CA US-101 x CA-299","Jct US-101","Jct CA-299",-117737.71,-28463.02,,50,0
 caus199us101,"CA US-101 x US-199","Jct US-101",,-115461.90,-35365.61,2640509043474825476,-1,0
-ca_395x120n,"CA US-395 x CA-120 Nth",Jct,,,,5503862910639286155,-1,0
-ca_395x120s,"CA US-395 x CA-120 Sth","South Jct",,-100637.25,-6286.99,,10,0
+ca_395x120n,"CA US-395 x CA-120 Nth",Jct,,,,5628404799614152082,-1,0
+ca_395x120s,"CA US-395 x CA-120 Sth","South Jct",Jct,-100637.25,-6286.99,,10,0
 caus395xca36,"CA US-395 x CA-36","Jct CA-36",,-103482.10,-21578.95,4448830533992394880,-1,0
+ca_395x89,"CA US-395 x CA-89",Jct,,,,5628404799035337998,-1,0
+ca_us6x395,"CA US-6 x US-395",Jct,,,,5628404817326638727,-1,0
 ca_vallejo,"CA Vallejo",Vallejo,,-113496.10,-13429.96,4901388539033748693,-1,2
 ca_vidaljct,"CA Vidal Junction","Vidal Junction",,-85925.81,18346.66,449777572543660032,-1,0
 ca_weavervil,"CA Weaverville",Weaverville,,-114531.40,-27204.32,4448919265495946423,-1,0
 ca_weed,"CA Weed",Weed,,-110276.20,-29118.67,2641886457409110016,-1,0
 ca_willowck,"CA Willow Creek","Willow Creek",,-115841.60,-28445.05,4448919265491755269,-1,0
 co_alamosa,"CO Alamosa",Alamosa,,-44285.87,6180.31,4108388062333438700,-1,0
+co_bristol,"CO Bristol",Bristol,,-27994.93,2844.37,3828023554786328576,-1,0
 co_burlingto,"CO Burlington",Burlington,,-27153.68,-3068.48,3675474442756393273,-1,0
 co_cheyennew,"CO Cheyenne Wells","Cheyenne Wells",,-27965.28,496.78,3675474442336957756,-1,0
 co_colospgs,"CO Colorado Springs","Colo Spgs",,-38868.36,-1412.28,4053584536882054092,50,2
@@ -154,6 +171,7 @@ co_i70xus40,"CO I-70 x US-40","Jct US-40","Jct I-70",-41721.02,-5607.35,,25,0
 co_johnsonvi,"CO Johnson Village","Johnson Village",,-43891.04,-1214.34,3746156891036582067,-1,0
 co_julesburg,"CO Julesburg",Julesburg,,-26596.30,-12174.50,3675474445994400547,-1,0
 co_kitcarson,"CO Kit Carson","Kit Carson",,-31070.96,-163.88,3681738841615830892,-1,0
+coks_slus50,"CO KS US-50 US-400 Border","State Line",,-27108.78,4145.37,5626872684245812517,-1,0
 co_lajunta,"CO La Junta","La Junta",,-33563.37,4274.35,3675474443695898035,-1,0
 co_lamar,"CO Lamar",Lamar,"Lamar Co",-29202.93,4247.83,3675474443133868392,-1,0
 co_lasanimas,"CO Las Animas","Las Animas",,-32031.20,3900.90,3675474444165659931,-1,0
@@ -230,13 +248,68 @@ id_twinfalls,"ID Twin Falls","Twin Falls",,-75649.83,-28326.35,36756915443104125
 id_us2us95,"ID US-2 x US-95 (Bonners Fry)","Jct US 95","Junction US 2",-75295.98,-64561.95,4818090226638460724,-1,0
 id_us95can,"ID US-95 Canada",Canada,,-75302.55,-64584.07,4818090228114855731,-1,28
 id_wy_sl_26,"ID WY US-26 Border","State Line",,-61630.50,-30044.89,4347916701369761792,-1,0
-ks_gardencit,"KS Garden City","Garden City","Garden City KS",,,5395848795492843520,-1,0
+ks_ashland,"KS Ashland",Ashland,"Ashland KS",-16517.48,9609.81,5549585313616363591,-1,7
+ks_bellevill,"KS Belleville",Belleville,,-6456.23,-4678.46,5361618767687450627,-1,0
+ks_colby,"KS Colby",Colby,,-22734.71,-3014.57,5346625532556673028,-1,2
+ks_cunningha,"KS Cunningham",Cunningham,,-11053.32,7376.07,5581200739429780865,-1,0
+ks_dodgecity,"KS Dodge City","Dodge City",,-17628.51,6199.72,5417814994023940099,-1,0
+ks_eldorado,"KS El Dorado","El Dorado",,-3735.98,6887.81,,30,0
+ks_emporia,"KS Emporia",Emporia,,-231.75,3936.19,5299011542219489282,-1,1
+ks_emporia35,"KS Emporia I-35",Emporia,,-1538.97,3300.56,,25,3
+ks_fairview,"KS Fairview",Fairview,,1419.71,-4718.83,5439842438213795842,-1,1
+ks_ftscott,"KS Fort Scott","Ft Scott",,5460.20,7030.35,,25,1
+ks_galena,"KS Galena",Galena,,5664.46,11226.64,5778102203333738496,-1,0
+ks_gardencit,"KS Garden City","Garden City","Garden City KS",-21220.87,5262.07,5395848795492843520,-1,0
+ks_greensbur,"KS Greensburg",Greensburg,,-14277.22,7411.79,5581200740545466769,-1,0
+ks_hays,"KS Hays",Hays,,-14642.40,874.62,5309285054262214659,-1,0
+ks_hutchinso,"KS Hutchinson",Hutchinson,,-9814.40,4570.32,5303373840919560196,-1,0
+ks_i135xi70,"KS I-135 x I-70","Jct I-135",I-70,-7889.70,-74.77,,80,0
+ks_i35xus75,"KS I-35 x US-75",US-75,"Jct I-35",1547.07,3476.03,,60,0
+ks_i470xi70,"KS I-470 x I-70 K-4","I-70 - K4",,1978.20,220.46,5477675687565740251,-1,0
+ks_i70i470,"KS I-70 x I-470",I-470,,2497.11,-274.23,,50,0
+ks_i70470w,"KS I-70 x I-470 US-75 West","I-470  US-75",,-114.62,-1071.32,,30,0
+ks_i70i635,"KS I-70 x I-635",I-635,,5229.98,-645.95,,100,0
+ks_i70xks156,"KS I-70 x KS-156",K-156,,-10234.59,493.67,,60,0
+ks_i70us75e,"KS I-70 x US-75 East","US-75 North",,580.53,-1147.78,,30,-3
+ks_jctcity,"KS Junction City","Junction City",,-4310.83,-576.39,5585356636650475779,-1,0
+ks_kanorado,"KS Kanorado",Kanorado,,-24828.23,-3256.02,5755937835749670912,-1,0
+ks_kinsley,"KS Kinsley",Kinsley,,-15147.58,5635.42,5444195922497765594,-1,0
 ks_liberal,"KS Liberal",Liberal,"Liberal KS",-21990.05,10125.89,5345187340314935298,-1,0
-ks_pittsburg,"KS Pittsburg",Pittsburg,,,,5351054437636767747,-1,0
+ks_marysvill,"KS Marysville",Marysville,,-2727.20,-4786.08,5383839534885896195,-1,0
+ks_mcphers,"KS McPherson",McPherson,,-7111.92,3372.52,,30,0
+ks_mullinvil,"KS Mullinville",Mullinville,,-15436.18,7636.33,5674097859060107082,-1,0
+ks_newton,"KS Newton",Newton,,-6065.64,4745.38,,30,0
+ks_oakley,"KS Oakley",Oakley,,-21252.33,-1362.85,5581028767487688706,-1,0
+ks_oberlin,"KS Oberlin",Oberlin,,-19689.17,-5325.02,5282501722605551619,-1,0
+ksok_sli35,"KS OK I-35 Border","State Line",,-6126.82,11311.21,,12,0
+ksoksl183,"KS OK US-183 State Line","State Line",,-16408.52,10445.53,5550046008585748480,-1,0
+ksok_sl83,"KS OK US-83 Border","State Line",,-21583.66,10808.02,5506507820119097874,-1,0
+ks_overlandp,"KS Overland Park","Overland Park",,6021.70,964.93,,20,0
+ks_phillipsb,"KS Phillipsburg",Phillipsburg,,-14654.81,-4653.00,5371854105201606658,-1,0
+ks_pittsburg,"KS Pittsburg",Pittsburg,,5590.12,8217.17,,35,0
+ks_protectio,"KS Protection",Protection,,-15621.22,9588.91,5551092795048198146,-1,1
+ks_salina,"KS Salina",Salina,,-6828.84,818.51,,30,0
+ks_smithctr,"KS Smith Center","Smith Center",,-12204.46,-4716.81,5343353437751083010,-1,0
 ks_topeka,"KS Topeka",Topeka,,987.40,-245.17,,1000,2
+ks_us160us18,"KS US-160 x US-183",US-160,,-14900.70,8999.31,5551151861510438924,-1,0
+ks_us183156,"KS US-183 x KS-156",K-156,,-14722.36,4663.53,,30,0
+ks_us40099e,"KS US-400 x KS-99 E",KS-99,,-214.04,8295.05,5716590789183342526,-1,0
+ks_us40099w,"KS US-400 x KS-99 W",KS-99,,-1617.34,7873.12,,25,0
+ks_us54us183,"KS US-54 US-400 x US-183",US-54,,-14593.20,7434.29,5581201874676875264,-1,0
+ks_us54ks3,"KS US-54 x KS-3",KS-3,,3826.26,6296.68,5759199896512889156,-1,0
+ks_us54ks99,"KS US-54 x KS-99",KS-99,,126.09,6765.10,5580990784514031619,-1,0
+ks_us54x400,"KS US-54 x US-400",US-54,,-3638.68,7545.13,,25,0
+ks_us54xus69,"KS US-54 x US-69",US-54,,5503.97,6380.53,,55,0
+ks_us69400,"KS US-69 x US-400",US-400,,5486.28,10204.73,,35,0
+ks_us694002,"KS US-69 x US-400 Nth",US-69,,5486.38,9447.50,,35,0
+ks_us75x400,"KS US-75 x US-400","Jct US-400",US-75,1622.30,9064.29,,50,0
+ks_us81xus24,"KS US-81 x US-24",US-24,,-7400.80,-2170.94,,60,0
+ks_wakenney,"KS WaKenney",WaKenney,,-17496.24,-615.09,5603336346783646126,-1,1
 ks_wichita,"KS Wichita",Wichita,,-5995.55,7293.69,,50,0
-ks_yates,"KS Yates Center","Yates Center",,,,5560247568802250752,-1,0
+ks_yates,"KS Yates Center","Yates Center",,1303.38,6571.37,5560247568802250752,-1,0
 la_shrevepor,"LA Shreveport",Shreveport,,7974.89,36128.49,4431046756219420733,-1,39
+mo_joplin,"MO Joplin",Joplin,,7282.50,11002.82,5674212740149543913,-1,0
+mo_kansascit,"MO Kansas City","Kansas City",,6953.57,-25.09,,1500,6
 mt_babb,"MT Babb",Babb,,-63931.71,-62150.49,5042249139683202680,-1,9
 mt_belt,"MT Belt",Belt,,-56393.18,-52344.43,4966678106927792130,-1,0
 mt_bigsandy,"MT Big Sandy","Big Sandy",,-53358.84,-56663.65,4818120135658303344,-1,0
@@ -310,6 +383,26 @@ mt_wolfpoint,"MT Wolf Point","Wolf Point",,-36081.83,-53679.80,48181201534211326
 mtwy_sl59,"MT WY Hwy-59 Border","State Border","State Line",-36792.17,-36308.13,4818049630506910621,-1,0
 mx_mexicoi19,"MX Mexico I-19 (Nogales)",Mexico,,-72102.04,37302.65,444934437478800172,-1,2
 nd_williston,"ND Williston",Williston,,-32973.27,-54048.76,4818120152263505868,-1,41
+ne_all,"NE Alliance",Alliance,,,,5515628220864596674,-1,0
+ne_alm,"NE Alma",Alma,,,,5515597003049994846,-1,0
+ne_ans,"NE Ansley",Ansley,,,,5572331303963918336,-1,0
+ne_aub,"NE Auburn",Auburn,,,,5515577763622355309,-1,0
+ne_bas,"NE Bassett",Bassett,,,,5548137443645784065,-1,0
+ne_bea,"NE Beatrice",Beatrice,,,,5515577763362308783,-1,0
+ne_cha,"NE Chadron",Chadron,,,,5515600252306007030,-1,0
+ne_col,"NE Columbus",Columbus,,,,5515572248125184460,-1,0
+ne_gis,"NE Grand Island","Grand Island",,-10053.47,-11796.84,,80,0
+ne_mccook,"NE McCook",McCook,,-19813.31,-7501.42,,50,0
+ne_mer,"NE Merriman",Merriman,,,,5515600251236457239,-1,0
+ne_nor,"NE Norfolk",Norfolk,,,,5515560995369622898,-1,0
+ne_npl,"NE North Platte","North Platte",,,,5515560994593690386,-1,0
+ne_one,"NE O'Neill",O'Neill,,,,5515560993339577699,-1,0
+ne_oga,"NE Ogallala",Ogallala,,,,5515560993926793700,-1,0
+ne_rcl,"NE Red Cloud","Red Cloud",,,,5515588001347996737,-1,0
+ne_sco,"NE Scottsbluff",Scottsbluff,,,,5515560993838698587,-1,0
+ne_sid,"NE Sidney",Sidney,,,,5515560996082665305,-1,0
+ne_the,"NE Thedford",Thedford,,,,5515560995130548600,-1,0
+ne_val,"NE Valentine",Valentine,,,,5591405152265895939,-1,0
 nm_alamogord,"NM Alamogordo",Alamogordo,,-46978.06,31467.34,576680419945611264,-1,0
 nm_albuquerq,"NM Albuquerque",Albuquerque,,-49223.66,20147.89,548462769446584322,25,-5
 nm_i40ealbu,"NM Albuquerque I-40E",Albuquerque,,-49691.19,19097.24,551775117588561921,-1,2
@@ -367,6 +460,7 @@ nv_austin,"NV Austin",Austin,,-91168.20,-13706.64,442744268245961913,-1,0
 nv_battlemtn,"NV Battle Mountain","Battle Mtn",,-89283.53,-21993.10,439483833367408134,-1,0
 nv_beatty,"NV Beatty",Beatty,,-92357.80,1989.53,491733622029680640,-1,0
 nv_carsoncit,"NV Carson City","Carson City",,-102076.10,-11339.89,478731077055283200,-1,0
+nv_coaldale,"NV Coaldale Jct","Coaldale Jct",,-96010.48,-6083.17,,30,0
 nv_denio,"NV Denio",Denio,,-93825.98,-28581.53,3138002460763099948,-1,2
 nv_deniojct,"NV Denio Junction","Denio Jct",,-93830.39,-28457.95,3138002460045873730,-1,0
 nv_elko,"NV Elko",Elko,,-83350.09,-19757.71,435385447024434895,-1,0
@@ -377,6 +471,7 @@ nv_indianspg,"NV Indian Springs","Indian Spgs",,-87361.96,5013.76,43934503703635
 nv_jackpot,"NV Jackpot",Jackpot,,-78092.52,-24884.12,3675691545174431201,-1,0
 nv_lasvegas,"NV Las Vegas","Las Vegas",,-85001.45,6393.79,3865115476967620610,-1,0
 nv_maz1,"NV Mazany Creek","Mazany Ck",,-83373.69,-861.16,439396655434958531,-1,0
+nv_mont_pass,"NV Montgomery Pass","Montgomery Pass",,,,5628404799043725222,-1,0
 nvmcdermitt,"NV OR McDermitt",McDermitt,,-88968.12,-27362.31,2899070664429076482,-1,0
 nv_owyhee,"NV Owyhee",Owyhee,,-83941.08,-26383.96,3675691545824545084,-1,0
 nv_panaca,"NV Panaca",Panaca,,-81134.67,-2471.72,3746483190439284349,-1,0
@@ -389,6 +484,7 @@ nv_sparksi80,"NV Sparks I-80E",Sparks,,-101050.90,-16902.05,434529571315075718,-
 nv_tonopah,"NV Tonopah",Tonopah,,-93519.61,-5520.67,3139482126711592880,-1,0
 nv_us50nv376,"NV US-50 x NV-376","Jct NV-376",,-90588.39,-13429.22,482039819069030427,-1,0
 nv_us6xus93,"NV US-6 US-50 x US-93","Jct US-93",,-80176.47,-8025.82,3474919640613847042,-1,0
+nv_us6x264,"NV US-6 x NV-264",Jct,,,,5628404802097178110,-1,0
 nv_us6nv375,"NV US-6 x NV-375","Jct SR-375",,-89574.73,-5561.04,3673011965742546946,-1,0
 nv_us6us95,"NV US-6 x US-95","Jct US-6",,-95530.64,-6213.73,3139482127986659530,-1,0
 nv_us93xalt9,"NV US-93 x ALT US-93",Jct,,-79373.69,-14424.93,498745077477408771,-1,0
@@ -406,7 +502,7 @@ ok_brokenbow,"OK Broken Bow","Broken Bow",,6526.19,25651.61,5292077166741278303,
 ok_brkbwdam,"OK Broken Bow Dam","Broken Bow Dam",,5933.68,23361.98,5292077165474589760,-1,0
 ok_bryanscnr,"OK Bryan's Corner","Bryan's Corner","Bryan's Cnr",-22169.93,12662.11,,30,0
 ok_checotah,"OK Checotah",Checotah,,3093.93,19331.57,,15,0
-ok_chouteau,"OK Chouteau",Chouteau,,3891.26,14996.43,,50,2
+ok_chouteau,"OK Chouteau",Chouteau,,3891.26,14911.88,,50,2
 ok_cleospgs,"OK Cleo Springs","Cleo Springs","Cleo Spgs",-11530.54,14529.48,5292077164044294748,-1,2
 ok_clinton,"OK Clinton",Clinton,,-13294.76,18191.71,5292077162702145694,-1,0
 ok_duncan,"OK Duncan",Duncan,,-9003.08,24135.62,5427077383776502414,-1,0
@@ -422,6 +518,7 @@ ok_idabel,"OK Idabel",Idabel,,5099.07,27270.28,5292077166342819697,-1,0
 ok_lawton,"OK Lawton",Lawton,,-11628.14,23980.22,5292077180800536060,-1,-2
 ok_madill,"OK Madill",Madill,,-3415.69,25843.25,5292077165759818298,-1,0
 ok_mcalester,"OK McAlester",McAlester,,1676.17,22559.18,,25,0
+ok_miami,"OK Miami",Miami,,4899.07,11833.98,5793406593686831104,-1,0
 ok_midwestci,"OK Midwest City","Midwest City",,-5330.93,19534.93,5448969157449769306,-1,2
 ok_muskogee,"OK Muskogee",Muskogee,,3313.84,17614.31,5460977408395904765,-1,3
 ok_oklacity,"OK Oklahoma City","Oklahoma City","Okla. City",-7257.50,19497.72,,50,2
@@ -429,6 +526,7 @@ ok_sallisaw,"OK Sallisaw",Sallisaw,,5218.76,19063.50,5292077163004127965,-1,2
 ok_seiling,"OK Seiling",Seiling,,-13879.24,15731.76,5427112652697371218,-1,2.5
 ok_spiro,"OK Spiro",Spiro,,6024.05,20880.52,5292077166342815491,-1,3
 ok_stroud,"OK Stroud",Stroud,,-3551.82,17784.44,5310061515289526274,-1,2
+ok_tonkawa,"OK Tonkawa",Tonkawa,,-6107.06,12785.97,5677104249201954750,-1,4
 ok_tulsa,"OK Tulsa",Tulsa,,-720.56,14649.77,,150,0
 ok_tx_i44_sl,"OK TX I-44 Border","State Line",,-12013.50,26374.95,,10,0
 oktx_texhoma,"OK TX Texhoma",Texhoma,,-26837.38,13052.05,5396927006420700809,-1,0
@@ -436,6 +534,8 @@ ok_tx_259_sl,"OK TX US-259 Border","State Line",,5838.40,29298.72,,20,0
 oktxsl271,"OK TX US-271 Border","State Line",,2343.15,28500.99,,15,0
 oktxsl385,"OK TX US-385 Border","State Line",,-29531.02,13061.78,5321302767072378880,-1,0
 oktxsl83,"OK TX US-83 Border","State Line",,-22208.73,13594.91,5292077165269025457,-1,0
+ok_us64us183,"OK US-64 x US-183",US-64,,-16223.93,11532.50,,30,0
+ok_us69i44,"OK US-69 x US-60 I-44","Jct US-60 / I-44",,4645.24,13550.49,,50,0
 ok_us70us259,"OK US-70 x US-259","US-259/SH-3  Jct",,6150.43,26985.50,5292077162500837124,-1,0
 ok_ux75x66nt,"OK US-75 x 66th St Nth","66th St Nth",,596.61,13032.37,,20,0
 ok_waurika,"OK Waurika",Waurika,,-9092.84,25147.92,5427081765477810554,-1,1

@@ -2,6 +2,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-117.2012,39.5374]},"properties":{"name":"Austin"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-117.2205,41.0473]},"properties":{"name":"Battle Mtn"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-116.6533,36.7737]},"properties":{"name":"Beatty"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.8663,38.0184]},"properties":{"name":"Coaldale Jct"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-118.6337,41.9690]},"properties":{"name":"Denio Jct"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-116.9105,37.3694]},"properties":{"name":"Goldfield"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-115.4286,36.4438]},"properties":{"name":"Indian Spgs"}},

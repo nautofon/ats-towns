@@ -1,0 +1,22 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.4939,39.8220]},"properties":{"name":"Belleville"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.4811,37.6624]},"properties":{"name":"Cunningham"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.8398,37.7729]},"properties":{"name":"El Dorado"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.6714,39.8382]},"properties":{"name":"Fairview"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.7731,37.7441]},"properties":{"name":"Ft Scott"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.7403,36.9982]},"properties":{"name":"Galena"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.2040,37.6381]},"properties":{"name":"Greensburg"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-101.7174,39.4398]},"properties":{"name":"Kanorado"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.4141,37.9479]},"properties":{"name":"Kinsley"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.8993,37.0954]},"properties":{"name":"Liberal"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.6126,38.3894]},"properties":{"name":"McPherson"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.4619,37.5907]},"properties":{"name":"Mullinville"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.3707,38.1485]},"properties":{"name":"Newton"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.8723,39.1409]},"properties":{"name":"Oakley"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.5601,39.8586]},"properties":{"name":"Oberlin"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.6263,38.8204]},"properties":{"name":"Overland Park"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.4866,37.2428]},"properties":{"name":"Protection"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.8237,39.8046]},"properties":{"name":"Smith Center"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.0049,39.0408]},"properties":{"name":"WaKenney"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.7068,37.8318]},"properties":{"name":"Yates Center"}}
+]}

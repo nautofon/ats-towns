@@ -8,6 +8,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-115.4286,36.4438]},"properties":{"name":"Indian Spgs"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-114.8340,37.6122]},"properties":{"name":"Mazany Ck"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-117.4439,41.9875]},"properties":{"name":"McDermitt"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.2810,37.9342]},"properties":{"name":"Montgomery Pass"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-116.2215,42.0212]},"properties":{"name":"Owyhee"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-114.4148,37.9734]},"properties":{"name":"Panaca"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-115.5455,37.4708]},"properties":{"name":"Rachel"}},

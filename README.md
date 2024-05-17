@@ -39,7 +39,7 @@ Additionally, the following locations are included if named because of their
 navigational value, even where no buildings exist:
 
 - Highway junctions
-- Mountain passes
+- Mountain passes and prominent bridges/tunnels
 
 I'm absolutely open to discuss changes to these criteria. The
 [ATS Slippy Map thread](https://forum.scssoft.com/viewtopic.php?t=318267)

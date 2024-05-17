@@ -16,5 +16,5 @@ Oberlin ;;-19689.17;;-5325.02
 Overland Park ;;6021.70;;964.93
 Protection ;;-15621.22;;9588.91
 Smith Center ;;-12204.46;;-4716.81
-WaKenney ;;-17496.24;;-615.09
+WaKeeney ;;-17496.24;;-615.09
 Yates Center ;;1303.38;;6571.37

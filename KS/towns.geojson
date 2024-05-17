@@ -17,6 +17,6 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-94.6263,38.8204]},"properties":{"name":"Overland Park"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-99.4866,37.2428]},"properties":{"name":"Protection"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-98.8237,39.8046]},"properties":{"name":"Smith Center"}},
-{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.0049,39.0408]},"properties":{"name":"WaKenney"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.0049,39.0408]},"properties":{"name":"WaKeeney"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-95.7068,37.8318]},"properties":{"name":"Yates Center"}}
 ]}

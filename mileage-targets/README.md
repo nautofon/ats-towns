@@ -1,12 +1,13 @@
 ## Distance sign mileage targets
 
-ATS 1.48
+ATS 1.50
 
 This data is read directly from the game files.
 The file `def.scs/def/sign/mileage_targets.sii` provides the list of targets,
 but most targets only have a node UID instead of the target's position.
 Resolving a list of node UIDs to positions is possible using the
-[**ts-map**](https://github.com/dariowouters/ts-map) ATS map renderer.
+[**ts-map**](https://github.com/dariowouters/ts-map) ATS map renderer
+(might not work on ATS 1.50+ due to the changed archive format).
 
 Note that the positions of many mileage targets are intentionally wrong.
 Since SCS only uses them for the distance signs, they can get away with

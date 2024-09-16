@@ -54,7 +54,7 @@ cct -c1,2 -z0 -t0 -d4 +proj=pipeline \
 
 # This projection definition is known to be inaccurate,
 # but a more accurate definition is not known as of early 2023.
-# The error is believed to be no higher than 0.1%.
+# The error is believed to be no higher than 0.4%.
 
 while read -r x y z t name
 do

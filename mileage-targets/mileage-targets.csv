@@ -2,28 +2,60 @@ token,"editor name","default name","name variants",easting,southing,"node uid","
 aaa_test,aaa_test,aaa_test,,,,,-1,0
 ab_cardston,"AB Cardston",Cardston,,-63929.38,-62208.91,5042249139146331602,-1,34
 ab_lethbridg,"AB Lethbridge",Lethbridge,,-59707.74,-59323.31,4818120137419907066,-1,100
-ar_altheimer,"AR Altheimer",Altheimer,,,,5955197887785665116,-1,2
+ar_altheimer,"AR Altheimer",Altheimer,,24351.31,23792.28,5955197887785665116,-1,2
 ar_ashdown,"AR Ashdown",Ashdown,,9154.45,28146.39,5446155251269828610,-1,0
-ar_baldknob,"AR Bald Knob","Bald Knob",,,,5478606461411065937,-1,0
-ar_boles,"AR Boles",Boles,,,,5646509773459685376,-1,0
-ar_conway,"AR Conway",Conway,,,,5466802327968088138,-1,5
-ar_dequeen,"AR De Queen","De Queen",,,,5445831821165133827,-1,0
+ar_baldknob,"AR Bald Knob","Bald Knob",,20171.75,19269.69,5478606461411065937,-1,0
+ar_blythevil,"AR Blytheville",Blytheville,,27134.98,16776.75,6112106775922542249,-1,1
+ar_boles,"AR Boles",Boles,,9038.09,22318.46,5646509773459685376,-1,0
+ar_conway,"AR Conway",Conway,,16484.48,19854.84,5466802327968088138,-1,5
+ar_crossett,"AR Crossett",Crossett,,19582.38,32234.62,5677304617586589698,-1,0
+ar_daisy,"AR Daisy",Daisy,,10801.45,25344.80,5656880415245729794,-1,0
+ar_dequeen,"AR De Queen","De Queen",,8013.26,25502.83,5445831821165133827,-1,0
+ar_eldorado,"AR El Dorado","El Dorado",,16410.27,30687.32,5459154105191694340,-1,0
+ar_fayette,"AR Fayetteville",Fayetteville,,10361.40,16071.36,5436866094521450499,-1,0
 ar_ftsmith,"AR Fort Smith","Ft. Smith","Fort Smith",8367.73,19871.79,,600,0
-ar_harrison,"AR Harrison",Harrison,,,,5471053141985263619,-1,0
-ar_hotspgs,"AR Hot Springs","Hot Springs",,,,5450396288779616259,-1,0
+ar_hamburg,"AR Hamburg",Hamburg,,20038.68,31507.48,5687791106074279940,-1,0
+ar_hardy,"AR Hardy",Hardy,,19259.04,14589.48,,375,1
+ar_harrison,"AR Harrison",Harrison,,14663.21,16306.55,5471053141985263619,-1,0
+ar_henderson,"AR Henderson",Henderson,,18317.19,15249.97,5833419057546199042,-1,0
+ar_hotspgs,"AR Hot Springs","Hot Springs",,13428.98,24158.52,5450396288779616259,-1,0
 ar_i30xi40,"AR I-30 x I-40",Jct,,17718.57,20805.43,,120,0
+ar_i30xus70,"AR I-30 x US-70",Jct,,16129.24,24458.82,,100,0
+ar_i40x49,"AR I-40 x I-49","Jct I-40",,10884.11,18261.63,,100,0
 ar_i40xi55,"AR I-40 x I-55",Jct,,25495.12,19465.47,,60,0
 ar_i40xus67,"AR I-40 x US-67",Jct,,18669.37,20731.76,,40,0
+ar_i530us167,"AR I-530 x US-167","Jct I-530",,17543.93,24518.53,,50,0
 ar_i530xus65,"AR I-530 x US-65","Jct I-530",,,,,300,0
+ar_i55555,"AR I-55 x I-555",Jct,,25971.27,18011.44,,200,0
 ar_jonesboro,"AR Jonesboro",Jonesboro,,23400.64,16775.26,,20,0
+ar_la_jctcit,"AR LA Junction City","Junction City",,16896.48,33050.41,6111303493723964488,-1,0
+ar_lakevlg,"AR Lake Village","Lake Village",,21787.29,31111.50,5699704988426698752,-1,0
 ar_littleroc,"AR Little Rock","Little Rock",,17692.24,22659.97,,40,0
-ar_ok_sl70,"AR OK US-70 Border","State Line",,,,5663889856129269760,-1,0
-ar_pinebluff,"AR Pine Bluff","Pine Bluff",,,,5509667234790834179,-1,0
+ar_magnolia,"AR Magnolia",Magnolia,,12977.98,31479.93,,100,0
+ar_morobay,"AR Moro Bay","Moro Bay",,18705.21,28991.34,5751482329531875330,-1,1
+ar_ok_sl70,"AR OK US-70 Border","State Line",,7199.66,25573.38,5663889856129269760,-1,0
+ar_pinebluff,"AR Pine Bluff","Pine Bluff",,20335.67,25483.87,5509667234790834179,-1,0
 ar_prescott,"AR Prescott",Prescott,,13263.68,27397.80,,150,3
-ar_russellv,"AR Russellville",Russellville,,,,5468053605129977858,-1,0
-ar_shearervi,"AR Shearerville",Shearerville,,,,5911981281190543363,-1,0
+ar_russellv,"AR Russellville",Russellville,,14681.32,19492.58,5468053605129977858,-1,0
+ar_shearervi,"AR Shearerville",Shearerville,,24370.05,20233.74,5911981281190543363,-1,0
+ar_sheridan,"AR Sheridan",Sheridan,,16976.96,27351.66,5666888618739892226,-1,3
+ar_siloamspr,"AR Siloam Springs","Siloam Springs",,6823.09,15301.29,5967548829490288505,-1,0
+ar_springdal,"AR Springdale",Springdale,,10237.75,14843.55,5759114045124116482,-1,0
 artx_texarka,"AR TX Texarkana",Texarkana,,9293.41,30841.01,,1200,3
-ar_us79xar17,"AR US-79 x AR-17","Jct AR 17",,,,5643548132021239811,-1,0
+ar_167x335,"AR US-167 x AR-335","Jct AR-335",,17337.95,28192.09,5666906879841927168,-1,0
+ar_us49x79,"AR US-49 x US-79","Jct US 49",,24101.13,23195.57,,30,0
+ar_us63x167,"AR US-63 x US-167","Jct US 167",,17585.88,30632.03,5460789426106990669,-1,0
+ar_us63x412,"AR US-63 x US-412","Jct US 412",,21229.27,15032.65,5478368482759344131,-1,0
+ar_us63x67,"AR US-63 x US-67","Jct US 67",,22004.83,15500.10,,50,0
+ar_us63x82,"AR US-63 x US-82","Jct US 82",,17302.32,31940.20,,100,0
+ar_us65x165,"AR US-65 x US-165","Jct US 165",,21795.01,28530.35,,60,0
+ar_us65x412,"AR US-65 x US-412","Jct US 62/412","Jct US 65",16566.58,16842.11,,30,0
+ar_us65x412w,"AR US-65 x US-412 W","Jct US 65",,13603.61,14382.19,,100,0
+ar_us67x412,"AR US-67 x US-412","Jct US 67",,22290.47,14753.44,,120,0
+ar_us70x270,"AR US-70 x US-270","Jct US 270",,14537.89,24127.12,,50,0
+ar_us70x71,"AR US-70 x US-71","Jct US 71",,8816.76,25765.40,,30,0
+ar_us79xar17,"AR US-79 x AR-17","Jct AR 17",,24245.34,21334.51,5643548132021239811,-1,0
+ar_ycity,"AR Y City","Y City",,9168.08,22902.73,,40,0
 az_ashfork,"AZ Ash Fork","Ash Fork",,-75348.08,14090.68,545516628407943171,-1,0
 az_az89az260,"AZ AZ-89 x AZ-260","Jct SR 260","Jct SR 89",-75625.42,18030.92,,25,0
 az_bitterspr,"AZ Bitter Springs","Bitter Springs",,-70266.26,7582.85,475387452403875888,-1,0
@@ -93,10 +125,13 @@ bc_grandfork,"BC Grand Forks","Grand Forks BC",,-83196.02,-64822.18,297621054164
 bc_penticton,"BC Penticton",Penticton,,-87287.81,-66291.32,3078285731677602015,-1,63
 bc_vancouver,"BC Vancouver","Vancouver BC",,-98611.11,-71086.92,2880602646589540076,-1,50
 ca_alturas,"CA Alturas",Alturas,,-102324.69,-28054.00,2640498185977987072,-1,0
-ca_bakersfld,"CA Bakersfield",Bakersfield,,,,438719103134671301,-1,0
+ca_amboy,"CA Amboy",Amboy,,,,6048688097718501376,-1,0
+ca_bakersfld,"CA Bakersfield",Bakersfield,,-103934.66,7804.51,,150,0
+ca_barstow,"CA Barstow",Barstow,,,,6012851067557654405,-1,0
+ca_beaumont,"CA Beaumont",Beaumont,,-97357.30,17976.70,,60,1
 ca_benton,"CA Benton",Benton,Jct,-98860.80,-5296.60,5628404799656097363,-1,0
 ca_bishop,"CA Bishop",Bishop,,-99048.55,-2518.96,5628404817058203272,-1,0
-ca_blythe,"CA Blythe",Blythe,,-87116.87,20803.77,458571364645142528,-1,0
+ca_blythe,"CA Blythe",Blythe,,,,6177405474694299667,-1,0
 ca_burney,"CA Burney",Burney,,-107672.15,-26612.91,3296760736085197518,-1,0
 ca_buttonw,"CA Buttonwillow",Buttonwillow,,-106539.73,7258.07,,30,0
 ca_136x190,"CA CA-136 x CA-190",Jct,,-96653.14,3301.62,2441521353766345261,-1,0
@@ -106,9 +141,13 @@ ca_99x152a,"CA CA-99 x CA-152 a",Jct,,-107986.38,-2773.77,,100,0
 ca_cavalley,"CA California Valley","California Valley",,-109298.39,7482.55,5661039613580018127,-1,0
 ca_cambria,"CA Cambria",Cambria,,-113358.45,4920.85,5628404835374739108,-1,0
 ca_canby,"CA Canby",Canby,,-104234.80,-28168.23,3296760739205763529,-1,0
+ca_carlsbad,"CA Carlsbad",Carlsbad,,-100651.12,21433.47,,50,0
 ca_carmel,"CA Carmel",Carmel,,-114700.29,652.61,5628404854014228050,-1,0
+ca_castaic,"CA Castaic",Castaic,,-104191.44,12237.99,,50,0
 ca_corning,"CA Corning",Corning,,-111497.46,-21316.51,4448904991415422939,-1,2
 ca_crescity,"CA Crescent City","Crescent City",,-116012.38,-35109.19,2732383273107193856,-1,0
+ca_desertctr,"CA Desert Center","Desert Center",,-91058.35,19484.79,,50,1
+ca_dsrtlk,"CA Desert Lake","Desert Lake",,,,6021542143622119442,-1,1
 ca_elcentro,"CA El Centro","El Centro",,-92005.62,24698.31,3752637636947410947,-1,0
 ca_eureka,"CA Eureka",Eureka,,-118667.95,-27856.18,4840225355464125552,-1,0
 ca_fivepts,"CA Five Points","Five Points",,-107924.51,308.61,5628404817947458953,-1,0
@@ -120,30 +159,38 @@ ca_hiouchi,"CA Hiouchi",Hiouchi,,-114195.18,-33605.56,2972953001024946176,130,0
 ca_hopland,"CA Hopland",Hopland,,-117093.16,-18260.96,4840256638344963137,-1,0
 ca_huron,"CA Huron",Huron,,-108235.99,1799.64,5628404835047573094,-1,0
 ca_i10us95,"CA I-10 x US-95",Jct,,-87226.73,21016.05,457846050993405986,50,0
+ca_i1558,"CA I-15 x CA-58",Jct,,-97817.94,12881.84,,50,0
+ca_i15x76,"CA I-15 x CA-76",Jct,,-98957.66,19659.33,,50,0
 ca_i5ca152,"CA I-5 x CA-152",Jct,,-110366.08,-3053.86,,60,0
 ca_i5ca198,"CA I-5 x CA-198",Jct,,-109066.84,859.08,,60,0
 ca_i5ca269,"CA I-5 x CA-269",Jct,,-108488.20,2830.41,,70,0
 ca_i5xca58,"CA I-5 x CA-58 Sth",Jct,,,,452302532268851200,-1,0
+ca_i5xca99,"CA I-5 x CA-99",Jct,,-104953.05,9795.09,,75,0
+ca_i5i405,"CA I-5 x I-405",Jct,,-101384.59,19266.12,,100,0
 ca_i5xi80,"CA I-5 x I-80",Jct,,-111615.55,-15904.23,,60,0
 ca_i5xus50,"CA I-5 x US-50","Jct US-50",,-111498.87,-14346.78,,75,0
 ca_i580x880,"CA I-580 x I-880",Jct,,-112327.13,-7266.39,5628404851199841125,-1,0
+ca_i8xi15,"CA I-8 x I-15",Jct,,-98123.70,22544.76,,100,0
 ca_i880x101,"CA I-880 x US-101",Jct,,-113983.73,-6200.75,,80,0
 ca_independe,"CA Independence",Independence,,-98806.06,-136.07,5683228150292807680,-1,0
 ca_indianwel,"CA Indian Wells","Indian Wells",,-99414.59,6893.48,,30,0
+ca_indio,"CA Indio",Indio,,-93849.42,19908.47,,50,0
 ca_janesvill,"CA Janesville",Janesville,,-102591.20,-19511.50,4448830535070333148,-1,0
 ca_kerman,"CA Kerman",Kerman,,-107692.58,-425.72,5628404817838406459,-1,2
 ca_lassenpk,"CA Lassen Park","Lassen Park",,-106505.45,-25102.75,4448830533526822555,-1,0
 ca_laytonvil,"CA Laytonville",Laytonville,,-116659.25,-21505.31,4448933458127300221,-1,0
 ca_leevining,"CA Lee Vining","Lee Vining",,-101358.79,-7274.14,5628404800096497840,-1,0
 ca_lonepine,"CA Lone Pine","Lone Pine",,-98504.78,1722.22,5695389425965727744,-1,0
-ca_losangele,"CA Los Angeles","Los Angeles",,-102033.64,16525.60,,100,2
+ca_losangele,"CA Los Angeles","Los Angeles",,-102259.39,15608.07,,600,2
+ca_ludlow,"CA Ludlow",Ludlow,,,,6012851077800147025,-1,0
 ca_meyers,"CA Meyers",Meyers,,-104920.39,-9251.42,5628404819729995322,-1,0
 ca_modesto,"CA Modesto",Modesto,,-108671.32,-6275.21,5628404816034834701,-1,0
+ca_mojave,"CA Mojave",Mojave,,,,6012865090374209946,-1,0
 ca_monterey,"CA Monterey",Monterey,,-114916.83,-988.08,5628404835311854888,-1,0
 ca_mossbeach,"CA Moss Beach","Moss Beach",,-116413.61,-5995.86,5628404851170485957,-1,0
 ca_mtshasta,"CA Mt Shasta","Mt Shasta",,-105179.45,-25671.15,4448830531060572761,-1,82
 ca_napa,"CA Napa",Napa,,-114034.29,-17489.92,4840278782885962073,-1,12
-ca_needles,"CA Needles",Needles,,-85255.83,14828.05,448279354507984900,-1,0
+ca_needles,"CA Needles",Needles,,,,6012851074159491804,-1,0
 ca_novato,"CA Novato",Novato,,-116738.83,-14390.25,4840256639422904651,-1,2
 canv_sl80,"CA NV I-80 Border","State Line",,-105016.67,-18875.55,4840289914061294630,-1,0
 ca_nv_sl395n,"CA NV US-395 Border N","State Line",,-101917.43,-18254.68,4448830532910267181,-1,0
@@ -163,7 +210,9 @@ ca_placervil,"CA Placerville",Placerville,,-107711.96,-12512.03,5628404816273894
 ca_redding,"CA Redding",Redding,,-111812.45,-25883.98,4841676796667586917,-1,0
 ca_sacrament,"CA Sacramento",Sacramento,,-111400.41,-14854.66,,10,2
 ca_salinas,"CA Salinas",Salinas,,-113318.72,-684.40,,40,0
-ca_san_diego,"CA San Diego","San Diego",,-99340.50,24826.79,506163222192390145,-1,2
+ca_sanbern,"CA San Bernardino","San Bernardino",,-99132.95,16393.82,,400,2
+ca_san_diego,"CA San Diego","San Diego",,-99728.04,23221.07,,40,0
+ca_sndi8i15,"CA San Diego I-8, I-15","San Diego",,-98434.20,23362.80,,80,0
 ca_sanfran,"CA San Francisco","San Francisco",,-115667.75,-9212.03,,1500,2
 ca_sf101nth,"CA San Francisco north US-101","San Francisco",,-116517.16,-12108.45,5633170634408919040,-1,9
 ca_sanjose1,"CA San Jose 1","San Jose",,-113595.57,-6027.46,,20,0
@@ -171,6 +220,7 @@ ca_sanjose_2,"CA San Jose 2","San Jose",,-114575.83,-5560.40,,20,0
 ca_san_lucas,"CA San Lucas","San Lucas",,-112246.70,1115.66,5628404836666586086,-1,1
 ca_sanluis,"CA San Luis Obispo","San Luis Obispo",,-111930.29,6406.96,,75,0
 ca_sanrafael,"CA San Rafael","San Rafael",,-116484.74,-13738.18,,20,2
+ca_santaclar,"CA Santa Clarita","Santa Clarita",,-103404.85,13408.69,,50,0
 ca_santacruz,"CA Santa Cruz","Santa Cruz",,-114996.45,-3636.52,5628404835177622606,-1,0
 ca_santamarg,"CA Santa Margarita","Santa Margarita",,-110223.71,4612.39,5661039613236084985,-1,0
 ca_silverfor,"CA Silverfork",Silverfork,,-105689.29,-11232.48,5628404816190006469,-1,0
@@ -188,11 +238,12 @@ caus199us101,"CA US-101 x US-199","Jct US-101",,-115461.91,-35365.61,26405090434
 ca_395x120n,"CA US-395 x CA-120 Nth",Jct,,-101122.53,-7003.25,5628404799614152082,-1,0
 ca_395x120s,"CA US-395 x CA-120 Sth","South Jct",Jct,-100637.25,-6286.99,,10,0
 caus395xca36,"CA US-395 x CA-36","Jct CA-36",,-103482.06,-21578.95,4448830533992394880,-1,0
-ca_us395ca58,"CA US-395 x CA-58",Jct,,-101297.66,10389.72,,50,0
+ca_us395ca58,"CA US-395 x CA-58",Jct,,-101189.89,10322.32,,80,-1
 ca_395x89,"CA US-395 x CA-89",Jct,,-100727.67,-8322.15,5628404799035337998,-1,0
 ca_us6x395,"CA US-6 x US-395",Jct,,-99037.74,-2585.33,5628404817326638727,-1,0
 ca_vallejo,"CA Vallejo",Vallejo,,-113496.10,-13429.96,4901388539033748693,-1,2
-ca_vidaljct,"CA Vidal Junction","Vidal Junction",,-85925.81,18346.66,449777572543660032,-1,0
+ca_ventura,"CA Ventura",Ventura,,-108522.09,12589.73,,30,0
+ca_vidaljct,"CA Vidal Junction","Vidal Junction",,,,6012851069696745770,-1,0
 ca_watsonvil,"CA Watsonville",Watsonville,,-113791.02,-2606.08,,250,0
 ca_weavervil,"CA Weaverville",Weaverville,,-114531.37,-27204.32,4448919265495946423,-1,0
 ca_weed,"CA Weed",Weed,,-110276.19,-29118.67,2641886457409110016,-1,0
@@ -363,9 +414,13 @@ ks_us81xus24,"KS US-81 x US-24",US-24,,-7400.80,-2170.94,,60,0
 ks_wakenney,"KS WaKeeney",WaKeeney,,-17496.24,-615.09,5603336346783646126,-1,1
 ks_wichita,"KS Wichita",Wichita,,-5995.55,7293.69,,50,0
 ks_yates,"KS Yates Center","Yates Center",,1303.38,6571.37,5560247568802250752,-1,0
+la_bastrop,"LA Bastrop",Bastrop,"Bastrop LA",20060.84,34110.73,,100,0
+la_ruston,"LA Ruston",Ruston,"Ruston, LA",15552.13,35785.06,,90,0
 la_shrevepor,"LA Shreveport",Shreveport,,7974.89,36128.49,4431046756219420733,-1,39
 mo_joplin,"MO Joplin",Joplin,,7282.50,11002.82,5674212740149543913,-1,0
 mo_kansascit,"MO Kansas City","Kansas City",,6953.57,-25.09,,1500,6
+mo_kennett,"MO Kennett",Kennett,"Kennett MO",26515.42,14856.82,,300,1
+mo_stlouis,"MO St Louis","St Louis",,27218.25,17128.67,6112106770495112380,-1,0
 mt_babb,"MT Babb",Babb,,-63931.71,-62150.49,5042249139683202680,-1,9
 mt_belt,"MT Belt",Belt,,-56393.18,-52344.43,4966678106927792130,-1,0
 mt_bigsandy,"MT Big Sandy","Big Sandy",,-53358.84,-56663.65,4818120135658303344,-1,0
@@ -579,7 +634,7 @@ ok_altus,"OK Altus",Altus,,-16539.14,22628.66,5292077183233236317,-1,0
 ok_ardmore,"OK Ardmore",Ardmore,,-4401.92,24881.35,5292077166451877892,-1,0
 ok_beaversbe,"OK Beavers Bend","Beavers Bend",,7108.42,24945.41,5292077165680119239,-1,0
 ok_boisecity,"OK Boise City","Boise City",,-29139.05,11595.19,,80,0
-ok_brokenbow,"OK Broken Bow","Broken Bow",,6526.19,25651.61,5292077166741278303,-1,0
+ok_brokenbow,"OK Broken Bow","Broken Bow",,6554.50,25675.91,5624526924707613787,-1,0
 ok_brkbwdam,"OK Broken Bow Dam","Broken Bow Dam",,5933.68,23361.98,5292077165474589760,-1,0
 ok_bryanscnr,"OK Bryan's Corner","Bryan's Corner","Bryan's Cnr",-22169.93,12662.11,,30,0
 ok_checotah,"OK Checotah",Checotah,,3093.93,19331.57,,15,0
@@ -595,6 +650,7 @@ ok_hochatown,"OK Hochatown",Hochatown,,5420.80,23507.84,5292077166422502671,-1,0
 ok_hugo,"OK Hugo",Hugo,,1664.17,27092.68,,15,0
 ok_i35xi44,"OK I-35 x I-44","Jct I-35","Jct I-44",-5671.32,18072.01,,120,0
 ok_i35xus412,"OK I-35 x US-412","Jct US-412","Jct I-35",-6047.33,14276.29,,50,0
+ok_i40x44,"OK I-40 x I-44","Jct I-40",,-8392.23,19612.43,,100,0
 ok_i40xus64,"OK I-40 x US-64","I-40 Jct",,6788.92,19155.94,5757787623100841988,-1,0
 ok_idabel,"OK Idabel",Idabel,,5099.07,27270.28,5292077166342819697,-1,0
 ok_lawton,"OK Lawton",Lawton,,-11628.14,23980.22,5292077180800536060,-1,-2
@@ -605,9 +661,10 @@ ok_midwestci,"OK Midwest City","Midwest City",,-5330.93,19534.93,544896915744976
 ok_muldrow,"OK Muldrow",Muldrow,,6122.81,19158.13,5675931412546519040,-1,0
 ok_muskogee,"OK Muskogee",Muskogee,,3313.84,17614.31,5460977408395904765,-1,3
 ok_oklacity,"OK Oklahoma City","Oklahoma City","Okla. City",-7257.50,19497.72,,50,2
-ok_sallisaw,"OK Sallisaw",Sallisaw,,5218.76,19063.50,5292077163004127965,-1,2
+ok_okc44,"OK Oklahoma City I-44","Okla. City",,-7405.73,17772.90,6156591672660666273,-1,6
+ok_sallisaw,"OK Sallisaw",Sallisaw,,5221.12,19123.42,5624526925550662441,-1,2
 ok_seiling,"OK Seiling",Seiling,,-13879.24,15731.76,5427112652697371218,-1,2.5
-ok_spiro,"OK Spiro",Spiro,,6024.05,20880.52,5292077166342815491,-1,3
+ok_spiro,"OK Spiro",Spiro,,6728.92,20987.13,,20,0
 ok_stroud,"OK Stroud",Stroud,,-3551.82,17784.44,5310061515289526274,-1,2
 ok_tonkawa,"OK Tonkawa",Tonkawa,,-6107.06,12785.97,5677104249201954750,-1,4
 ok_tulsa,"OK Tulsa",Tulsa,,-720.56,14649.77,,150,0
@@ -617,6 +674,7 @@ ok_tx_259_sl,"OK TX US-259 Border","State Line",,5838.40,29298.72,,20,0
 oktxsl271,"OK TX US-271 Border","State Line",,2343.15,28500.99,,15,0
 oktxsl385,"OK TX US-385 Border","State Line",,-29531.02,13061.78,5321302767072378880,-1,0
 oktxsl83,"OK TX US-83 Border","State Line",,-22208.73,13594.91,5292077165269025457,-1,0
+ok_us59us271,"OK US-59 x US-271","Jct US 59",,5991.46,20901.89,5292077164677676800,-1,0
 ok_us64us183,"OK US-64 x US-183",US-64,,-16223.93,11532.50,,30,0
 ok_us69i44,"OK US-69 x US-60 I-44","Jct US-60 / I-44",,4645.24,13550.49,,50,0
 ok_us70us259,"OK US-70 x US-259","US-259/SH-3  Jct",,6150.43,26985.50,5292077162500837124,-1,0
@@ -674,7 +732,7 @@ or_us97nor58,"OR US-97N x OR-58","Jct OR-58",,-104292.48,-38913.04,3210363812445
 or_vale,"OR Vale",Vale,,-86960.41,-37477.71,,40,0
 or_williamet,"OR Williamette Pass","Williamette Pass",,-105735.05,-40891.45,3210363812042970744,-1,0
 sd_bellefour,"SD Belle Fourche","Belle Fourche",,-36427.88,-38048.81,4818120155262480860,-1,91
-tn_memphis,"TN Memphis",Memphis,,,,5623748728555765791,-1,5
+tn_memphis,"TN Memphis",Memphis,,26653.33,19492.02,5623748728555765791,-1,5
 tx_abileni20,"TX Abilene I-20",Abilene,,-17780.65,36000.31,,70,0
 tx_adrian,"TX Adrian",Adrian,,-30554.57,20432.68,4686049807371931240,-1,0
 tx_alvarado,"TX Alvarado",Alvarado,,-5877.52,36883.04,4993287645310943336,-1,1

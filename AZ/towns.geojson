@@ -5,6 +5,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-109.6113,36.5150]},"properties":{"name":"Chinle"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-112.8230,37.0706]},"properties":{"name":"Colorado City"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-114.0264,32.7761]},"properties":{"name":"Dateland"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.3575,33.6790]},"properties":{"name":"Ehrenberg"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-112.6483,36.8521]},"properties":{"name":"Fredonia"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-110.7568,33.3843]},"properties":{"name":"Globe"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-109.3296,33.0030]},"properties":{"name":"Morenci"}},

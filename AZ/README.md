@@ -2,6 +2,8 @@
 
 ATS 1.47
 
+Updated to 1.53 using mileage target data.
+
 For inclusion criteria etc., see the [repository root](../../../)'s readme.
 
 The files for Arizona may be considered complete.

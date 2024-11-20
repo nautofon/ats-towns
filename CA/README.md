@@ -1,6 +1,6 @@
 ## ATS scenery towns in California
 
-ATS 1.49
+ATS 1.53.1
 
 For inclusion criteria etc., see the [repository root](../../../)'s readme.
 

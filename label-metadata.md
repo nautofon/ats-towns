@@ -1,0 +1,246 @@
+# Label Metadata Description
+
+The label metadata is meant to be used together with mileage targets.
+
+Label metadata may contain the following attributes for each label.
+They are described in detail further down in this document.
+All attributes are optional.
+
+- [`token`](#token)
+- [`text`](#text)
+- [`easting`](#easting--southing)
+- [`southing`](#easting--southing)
+- [`kind`](#kind)
+- [`signed`](#signed)
+- [`access`](#access)
+- [`industry`](#industry)
+- [`city`](#city)
+- [`country`](#country)
+- [`hide`](#hide)
+- [`checked`](#checked)
+- [`ref`](#ref)
+- [`remark`](#remark)
+
+Unless stated otherwise, a missing or undefined attribute implies that the
+label hasn't been assessed for that information, or that it hasn't been
+possible to determine the correct value.
+
+## Serialization
+
+Label metadata can be serialized as a [CSV](https://datatracker.ietf.org/doc/html/rfc4180)
+table. They should have a header row and should avoid line breaks inside
+fields. Ordering the columns in the same order in which the attributes are
+defined in this document is recommended.
+
+(The details of serializing values like bools or `undef` as CSV are TBD.)
+
+Alternatively, label metadata can be serialized as objects in a
+[JSON](https://datatracker.ietf.org/doc/html/rfc8259) array.
+
+For consistency, the preferred order of records in both cases is to sort
+ascending by `token` and by `text`, with undefined tokens at the end.
+
+## Attributes
+
+### token
+
+    token: string
+
+The "token" identifying the mileage target to apply the label attributes to.
+
+**If undefined,** this record describes a new label instead of refining an
+existing one. In this case, position and label text are required attributes,
+so as to be able to show the label on a map.
+
+### text
+
+    text: string
+
+The *adjusted* text for this label, if any.
+
+Many labels will use the text included with a mileage target, or an
+automatically generated sanitized version of it. This attribute should only
+be present in the metadata where the mileage target name is inadequate
+(or unavailable); otherwise, it should be undefined.
+
+The `text` attribute probably shouldn't be used for introducing abbreviations,
+or for converting [endonyms](https://en.wikipedia.org/wiki/Endonym) to exonyms.
+Those are presentation choices better handled at a different level.
+
+### easting / southing
+
+    easting: number
+    southing: number
+
+The *adjusted* position for this label, if any.
+
+Many labels will use the position included with a mileage target. These
+attributes should only be present in the metadata in cases where the mileage
+target position is inadequate; otherwise, they should be undefined.
+
+### kind
+
+    kind: string
+
+The kind of location this label is for. Possible values include (but are not
+necessarily limited to) the following:
+
+* `city`: Marked city, e.g. Bakersfield, CA.
+* `town`: Unmarked scenery town, urban district, or other settlement, e.g. Buttonwillow, CA.
+* `bridge`: Notable bridge, e.g. Golden Gate Bridge, CA.
+* `tunnel`: Notable tunnel, e.g. Collier Tunnel, CA.
+* `pass`: Mountain pass, e.g. Crestwood Summit, CA.
+* `junction`: Named but unpopulated intersection, e.g. Muddy Gap, WY.
+* `port`: Unpopulated ferry port, e.g. Port Bolivar, TX.
+* `dam`: Notable dam, e.g. Broken Bow Dam, OK.
+* `forest`: Notable forest, e.g. Nebraska National Forest.
+* `park`: Notable park, e.g. Glacier National Park.
+* `unnamed`: Mileage target location with no name, e.g. "US-160 x US-183", KS.
+
+This dataset doesn't claim to be complete, *especially* not for locations
+that aren't scenery towns.
+These categories exist primarily because they show up in mileage target data.
+
+### signed
+
+    signed: boolean
+
+Whether or not the name of the location appears on signs *on site*.
+
+A scenery town often has a green road sign at the town limit bearing the name.
+Some instead have non-official or artistic installations showing the town name;
+if these are well readable, they should be considered the same as a road sign.
+For a name to be considered signed, it should generally be visible no matter
+which direction you arrive from.
+
+Examples for `signed` (all from California):
+
+* San Lucas (SR 198): yes — The name is well signed from all directions.
+* Golden Gate Bridge (US 101): *probably* no — The name only appears on site sideways on a building.
+* Kerman (SR 145): no — The name only appears on direction signs, not in Kerman itself.
+* Five Points (SR 145): no — The name is only visible on site when coming from the north.
+
+### access
+
+    access: boolean
+
+Whether or not the named location is at least partially accessible during
+regular gameplay.
+
+Typically, where you can drive past the sign stating the location's name, this
+is a "yes", except when the only road is a freeway and there are no usable
+exits to the location. If there is no sign, the same principle is applied,
+but with respect to the point where you would normally expect the sign to be.
+
+In some cases, assessing this attribute will require some subjective judgement,
+which may also have to be adjusted over time as more experience with this
+dataset is gained. Any feedback on this is most welcome.
+
+Examples for `access` (all from California):
+
+* Weed (US 97): yes — You can drive on a side street and access a gas station.
+* Old Station (SR 44): yes — The highway takes you right through the town.
+* Crestwood Summit (I-8): yes — You can drive over this summit.
+* California Valley (SR 58): *probably* yes — There isn't much of a town along the highway, but maybe it just is that tiny.
+* Kerman (SR 145): *probably* undefined — The limits of the town are entirely unclear, therefore it's impossible to say whether or not it's accessible.
+* San Lucas (SR 198): *probably* no — You can drive past the town signs, but the actual town is blocked off.
+* Malibu (SR 1): *probably* no — The town seems to be off the highway, past blockers.
+* Petaluma (US 101): no — There is no exit to leave the highway.
+* Carlsbad (I-5): no — The exit off the highway is completely blocked.
+
+### industry
+
+    industry: boolean
+
+Whether or not the label is for a game location with deliverable industry.
+Typically, this will be the case for scenery towns with company depots
+(sometimes called "suburbs").
+
+This attribute can be true even when the industry in question is located
+*outside* the signed limits of the town identified by the label. It depends
+on the distance to the town and the general density of labels and features
+in the given area.
+Like for `access`, this requires some subjective judgement, which again may
+have to be adjusted over time as more experience with this dataset is gained.
+Any feedback on this is most welcome.
+
+Examples for `industry` (all from California):
+
+* Five Points (SR 145): yes — The [pecan farm](https://truckermudgeon.github.io?mlat=36.46&mlon=-120.09#8.5/36.46/-120.09) is *just* outside the town.
+* Corning (I-5): *probably* yes — The [farm](https://truckermudgeon.github.io?mlat=39.9&mlon=-122.49#8.5/39.9/-122.49) is visible from the town limit sign, and there are no other named features anywhere close to it.
+* Desert Lake (SR 58): *probably* no — The only access to the [industrial site](https://truckermudgeon.github.io?mlat=35.16&mlon=-117.59#8.5/35.16/-117.59) is past the town, but there's quite a bit of distance between them.
+* California Valley (SR 58): no — The [quarry](https://truckermudgeon.github.io?mlat=35.34&mlon=-119.98#8.5/35.34/-119.98) in the area isn't close to the town at all.
+
+### city
+
+    city: string
+
+The SCS token of the marked city this label is *provably* associated with,
+if any.
+
+For towns, the usual way to prove such an association is the in-game economy;
+see [`industry`](#industry).
+Exceptionally, there may be other ways, such as "quick travel" targets.
+Estimations based on geographical distance should not be considered for
+this attribute (except as a part of assessing `industry`, if necessary).
+
+### country
+
+    country: string
+
+The ISO 3166-1 code of the country (ETS2) or the ISO 3166-2 code of the
+state or province (ATS) the labeled feature is located in.
+
+Examples for `country`:
+
+* Delaware: `US-DE`
+* Germany: `DE`
+
+### hide
+
+    hide: boolean
+
+Whether or not it's recommended to hide this label by default on maps.
+
+This attribute is an attempt to re-create the selection in the original
+"ATS scenery towns" dataset. Its value is largely subjective, determined by
+the dataset maintainer. Feedback is welcome.
+
+Examples for `action` (both from Kansas):
+
+* Ashland (US 183): yes — Not visible in the game, except on a distance sign.
+* Protection (US 183): no — Does exist in the game world (albeit inaccessible).
+
+### checked
+
+    checked: string
+
+The ISO 8601 date of the last time the label was assessed for its metadata.
+May be used in future to prioritize dataset maintenance. High precision isn't
+necessary; the date formats `YYYY` or `YYYY-MM` should be adequate.
+
+Checking / assessing usually requires looking at the in-game location using
+the dev cam.
+
+### ref
+
+    ref: unknown
+
+Reference to real-life information about the labeled entity.
+Not currently used; reserved for future expansion.
+
+The format isn't defined yet, but it'll probably be a string.
+For example, the value could be a URI such as a Wikipedia link or
+maybe a [GeoNames](https://www.geonames.org) record ID.
+
+### remark
+
+    remark: string
+
+Any kind of note or comment about the label. Can be used to record sources or
+rationale for metadata. There is no length limit for the remark, but long
+remarks are less readable and should be avoided.
+
+Can also be used to store additional data using micro-formats. For example, if
+the remark of a mountain pass label begins with something like `8724ft`, it's
+probably the pass elevation.

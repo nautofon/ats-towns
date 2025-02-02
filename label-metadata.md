@@ -16,14 +16,20 @@ All attributes are optional.
 - [`industry`](#industry)
 - [`city`](#city)
 - [`country`](#country)
-- [`hide`](#hide)
+- [`show`](#show)
 - [`checked`](#checked)
 - [`ref`](#ref)
 - [`remark`](#remark)
 
-Unless stated otherwise, a missing or undefined attribute implies that the
-label hasn't been assessed for that information, or that it hasn't been
-possible to determine the correct value.
+**Attributes are missing** in cases where information garnered from analyzing
+mileage targets should be used instead if available, for example because the
+location in question has yet to be manually assessed for its metadata.
+
+**Attributes are undefined** in cases where the location *has* been
+assessed, but the correct value couldn't be determined.
+This is primarily an internal distinction, used to control how this
+metadata is merged with the mileage targets dataset. For most data users,
+the difference between missing and undefined attributes won't matter.
 
 ## Serialization
 
@@ -32,13 +38,45 @@ table. They should have a header row and should avoid line breaks inside
 fields. Ordering the columns in the same order in which the attributes are
 defined in this document is recommended.
 
-(The details of serializing values like bools or `undef` as CSV are TBD.)
+```csv
+token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,ref,remark
+wy_yellowsth,,-58854,-37767,nature,all,"yes",~,jackson,US-WY,no,2025-02,,ST drop-off only
+...
+```
+
+Empty fields signify missing values, fields containing only `~` undefined
+values. For boolean attributes, a match on `/^no?\b/i` is to be interpreted
+falsy, any other string truthy; but when *writing* CSV, booleans should be
+coded as `yes` and `no`.
 
 Alternatively, label metadata can be serialized as objects in a
 [JSON](https://datatracker.ietf.org/doc/html/rfc8259) array.
+Attributes with an undefined value are coded as `null`.
+
+```json
+[
+  {
+    "token"    : "wy_yellowsth",
+    "easting"  : -58854,
+    "southing" : -37767,
+    "kind"     : "nature",
+    "signed"   : "all",
+    "access"   : true,
+    "industry" : null,
+    "city"     : "jackson",
+    "country"  : "US-WY",
+    "show"     : false,
+    "checked"  : "2025-02",
+    "remark"   : "ST drop-off"
+  },
+  ...
+]
+```
 
 For consistency, the preferred order of records in both cases is to sort
-ascending by `token` and by `text`, with undefined tokens at the end.
+ascending by `country` and by `text`.
+Records without country code should instead come last, sorted by `token`.
+Within each country, records with `kind = unnamed` should always come last.
 
 ## Attributes
 
@@ -48,24 +86,32 @@ ascending by `token` and by `text`, with undefined tokens at the end.
 
 The "token" identifying the mileage target to apply the label attributes to.
 
-**If undefined,** this record describes a new label instead of refining an
-existing one. In this case, position and label text are required attributes,
-so as to be able to show the label on a map.
+**If missing or undefined,** this record describes a new label instead
+of refining an existing one. In this case, position and label text
+should be present, so as to be able to show the label on a map.
+
+A [token](https://modding.scssoft.com/wiki/Documentation/Engine/Units#Attribute_types)
+is a string-like ID used by SCS that can be encoded in a single 64-bit value.
+The concept is similar to [OSType](https://en.wikipedia.org/wiki/FourCC#Technical_details)
+known from classic Mac OS, but restricts the available characters [`a-z0-9_`]
+in order to allow a human-readable representation of up to 12 chars in length.
 
 ### text
 
     text: string
 
-The *adjusted* text for this label, if any.
+The text for this label.
 
-Many labels will use the text included with a mileage target, or an
-automatically generated sanitized version of it. This attribute should only
-be present in the metadata where the mileage target name is inadequate
-(or unavailable); otherwise, it should be undefined.
-
-The `text` attribute probably shouldn't be used for introducing abbreviations,
-or for converting [endonyms](https://en.wikipedia.org/wiki/Endonym) to exonyms.
-Those are presentation choices better handled at a different level.
+The label text should generally be decided upon using the same principles
+that OpenStreetMap uses for determining a feature's
+[primary name](https://wiki.openstreetmap.org/wiki/Key:name#Values):
+Favor the situation "on the ground", but allow for common sense.
+Names should be written as they appear on signs, in the local language.
+If signs in the game world abbreviate a name, but the name can reasonably
+be spelled out in full, the `text` should also be spelled out in full.
+However, if the full name is quite unwieldy or even obscure in the real
+world, abbreviating it may sometimes be better after all.
+The `remarks` attribute may be used to write down the rationale.
 
 ### easting / southing
 
@@ -76,7 +122,7 @@ The *adjusted* position for this label, if any.
 
 Many labels will use the position included with a mileage target. These
 attributes should only be present in the metadata in cases where the mileage
-target position is inadequate; otherwise, they should be undefined.
+target position is inadequate; otherwise, they should be missing.
 
 ### kind
 
@@ -87,50 +133,62 @@ necessarily limited to) the following:
 
 * `city`: Marked city, e.g. Bakersfield, CA.
 * `town`: Unmarked scenery town, urban district, or other settlement, e.g. Buttonwillow, CA.
+* `hamlet`: Like `town`, but *tiny*, e.g. Hiland, WY.
 * `bridge`: Notable bridge, e.g. Golden Gate Bridge, CA.
 * `tunnel`: Notable tunnel, e.g. Collier Tunnel, CA.
 * `pass`: Mountain pass, e.g. Crestwood Summit, CA.
 * `junction`: Named but unpopulated intersection, e.g. Muddy Gap, WY.
 * `port`: Unpopulated ferry port, e.g. Port Bolivar, TX.
-* `dam`: Notable dam, e.g. Broken Bow Dam, OK.
-* `forest`: Notable forest, e.g. Nebraska National Forest.
-* `park`: Notable park, e.g. Glacier National Park.
+* `dam`: Notable dam or reservoir, e.g. Broken Bow Dam, OK.
+* `parking`: Named turnout, wayside, scenic overlook, or other parking area (may or may not have sleep functionality), e.g. Snake River Picnic Area, WY.
+* `historic`: Location of historic significance, e.g. Nebraska Prairie Museum.
+* `nature`: Notable park, forest or other natural feature, e.g. Hell's Half Acre, WY.
+* `military`: Military or similar restricted zone, e.g. Yuma Proving Ground, AZ.
 * `unnamed`: Mileage target location with no name, e.g. "US-160 x US-183", KS.
+    Mileage targets without a name are generally unusable as map labels and
+    should be filtered out by data users.
 
 This dataset doesn't claim to be complete, *especially* not for locations
 that aren't scenery towns.
-These categories exist primarily because they show up in mileage target data.
+Some of these categories exist only because they show up in mileage target data.
+The list of values used as `kind` may change in future, depending on which
+locations SCS will use as mileage targets and the needs of metadata users.
 
 ### signed
 
-    signed: boolean
+    signed: stringy enumeration
 
-Whether or not the name of the location appears on signs *on site*.
+Describes how the name is signed at a location in the game.
 
 A scenery town often has a green road sign at the town limit bearing the name.
 Some instead have non-official or artistic installations showing the town name;
 if these are well readable, they should be considered the same as a road sign.
-For a name to be considered signed, it should generally be visible no matter
-which direction you arrive from.
+For other kinds of locations than towns, the same principle applies.
+Possible values are the following:
 
-Examples for `signed` (all from California):
+* `all`: Name well visible, no matter which direction you arrive from; e.g. San Lucas, CA.
+* `most`: Name well visible when arriving from a clear majority of directions; e.g. Hoback Jct, WY.
+* `some`: Name visible in *some* way, but it may not be very obvious; e.g. Five Points, CA.
+* `remote`: Name *not* visible on site, but it appears on distance / direction signs elsewhere; e.g. Kerman, CA.
 
-* San Lucas (SR 198): yes — The name is well signed from all directions.
-* Golden Gate Bridge (US 101): *probably* no — The name only appears on site sideways on a building.
-* Kerman (SR 145): no — The name only appears on direction signs, not in Kerman itself.
-* Five Points (SR 145): no — The name is only visible on site when coming from the north.
+Locations that aren't named within the game world at all probably shouldn't be
+labeled on the map. If labels for such locations are included in this dataset
+anyway, they should be coded as `kind = "unnamed"` and `signed = undefined`.
 
 ### access
 
     access: boolean
 
-Whether or not the named location is at least partially accessible during
+Whether or not a core part of the named location is accessible during
 regular gameplay.
 
-Typically, where you can drive past the sign stating the location's name, this
-is a "yes", except when the only road is a freeway and there are no usable
-exits to the location. If there is no sign, the same principle is applied,
-but with respect to the point where you would normally expect the sign to be.
+Typically, locations are accessible where you can drive past the sign
+stating the location's name, or where you can drive onto a parking
+area or turnout dedicated for visitors of the location in question.
+But there are exceptions, for example where the only road is a
+freeway and there are no usable exits to the location.
+If there is no sign, the same principle is applied, but with respect
+to the point where you would normally expect the sign to be.
 
 In some cases, assessing this attribute will require some subjective judgement,
 which may also have to be adjusted over time as more experience with this
@@ -143,8 +201,8 @@ Examples for `access` (all from California):
 * Crestwood Summit (I-8): yes — You can drive over this summit.
 * California Valley (SR 58): *probably* yes — There isn't much of a town along the highway, but maybe it just is that tiny.
 * Kerman (SR 145): *probably* undefined — The limits of the town are entirely unclear, therefore it's impossible to say whether or not it's accessible.
-* San Lucas (SR 198): *probably* no — You can drive past the town signs, but the actual town is blocked off.
 * Malibu (SR 1): *probably* no — The town seems to be off the highway, past blockers.
+* San Lucas (SR 198): no — You can drive past the town signs, but the actual town is entirely blocked off.
 * Petaluma (US 101): no — There is no exit to leave the highway.
 * Carlsbad (I-5): no — The exit off the highway is completely blocked.
 
@@ -175,8 +233,8 @@ Examples for `industry` (all from California):
 
     city: string
 
-The SCS token of the marked city this label is *provably* associated with,
-if any.
+The SCS token of the marked city this label can be *proven* to be associated
+with, if any.
 
 For towns, the usual way to prove such an association is the in-game economy;
 see [`industry`](#industry).
@@ -196,20 +254,28 @@ Examples for `country`:
 * Delaware: `US-DE`
 * Germany: `DE`
 
-### hide
+### show
 
-    hide: boolean
+    show: boolean
 
-Whether or not it's recommended to hide this label by default on maps.
+Whether or not it's recommended to show this label by default on maps.
 
 This attribute is an attempt to re-create the selection in the original
 "ATS scenery towns" dataset. Its value is largely subjective, determined by
 the dataset maintainer. Feedback is welcome.
 
-Examples for `action` (both from Kansas):
+If this attribute is missing for a label and there is no other information,
+that label should be shown by default.
 
-* Ashland (US 183): yes — Not visible in the game, except on a distance sign.
-* Protection (US 183): no — Does exist in the game world (albeit inaccessible).
+> [!TIP]  
+> The `show` attribute will be missing frequently. Remember that you may
+> have to check for the difference between an undefined value and the
+> boolean fiction value, for example with JavaScript's `===` operator.
+
+Examples for `show` (both from Kansas):
+
+* Ashland (US 183): no — Not visible in the game, except on a distance sign.
+* Protection (US 183): yes — Does exist in the game world (albeit inaccessible).
 
 ### checked
 

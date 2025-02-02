@@ -26,6 +26,7 @@ then
     sed -E -e '1d; $d; s/,?$/,/' \
       -e "s/(\"properties\":{)/\1\"state\":\"$state_id\",\"country\":\"US-$state_id\",/" \
       -e "s/\"name\":(\".*\")/\"name\":\1,\"text\":\1/" \
+      -e "/0+(,|\])/s//\1/g" \
       "$DIR/$state_id/towns.geojson" >> "$TEMP"
   done
   temp_to_geojson "$TEMP" "$DIR/all-towns.geojson"
@@ -47,17 +48,13 @@ TEMP=`mktemp` || exit 1
 
 # Convert bugs.txt format to GeoJSON
 
-awk 'BEGIN {FS=";";OFS=" "} {print $3,$5,$1}' "$IN" |
+awk 'BEGIN {FS=";";OFS=" "} {print $3,$5,"0",$1}' "$IN" |
 
-cct -c1,2 -z0 -t0 -d4 +proj=pipeline \
-  +step +proj=axisswap +order=1,-2 \
-  +step +inv +proj=lcc +lat_0=39 +lon_0=-96 +lat_1=33 +lat_2=45 +ellps=sphere +k_0=0.05088 |
+cs2cs -d 4 \
+  "$( curl -LSs https://nautofon.github.io/scs-crs/wkt-ats.txt )" \
+  "urn:ogc:def:crs:OGC:1.3:CRS84" |
 
-# This projection definition is known to be inaccurate,
-# but a more accurate definition is not known as of early 2023.
-# The error is believed to be no higher than 0.4%.
-
-while read -r x y z t name
+while read -r x y z name
 do
   printf -v geometry '{"type":"Point","coordinates":[%s,%s]}' "$x" "$y"
   printf '{"type":"Feature","geometry":%s,"properties":{"name":"%s"}},\n' "$geometry" "$name"

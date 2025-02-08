@@ -24,7 +24,8 @@ then
   while read -r state_id
   do
     sed -E -e '1d; $d; s/,?$/,/' \
-      -e "s/(\"properties\":{)/\1\"state\":\"$state_id\",/" \
+      -e "s/(\"properties\":{)/\1\"state\":\"$state_id\",\"country\":\"US-$state_id\",/" \
+      -e "s/\"name\":(\".*\")/\"name\":\1,\"text\":\1/" \
       "$DIR/$state_id/towns.geojson" >> "$TEMP"
   done
   temp_to_geojson "$TEMP" "$DIR/all-towns.geojson"

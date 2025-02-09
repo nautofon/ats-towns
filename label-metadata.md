@@ -31,6 +31,10 @@ This is primarily an internal distinction, used to control how this
 metadata is merged with the mileage targets dataset. For most data users,
 the difference between missing and undefined attributes won't matter.
 
+<!--
+In practice, unassessed labels will be relatively common in this dataset.
+-->
+
 ## Serialization
 
 Label metadata can be serialized as a [CSV](https://datatracker.ietf.org/doc/html/rfc4180)
@@ -48,6 +52,14 @@ Empty fields signify missing values, fields containing only `~` undefined
 values. For boolean attributes, a match on `/^no?\b/i` is to be interpreted
 falsy, any other string truthy; but when *writing* CSV, booleans should be
 coded as `yes` and `no`.
+
+<!--
+The description has the flexibility to add micro-formats or comments to
+booleans in future. The chance that I'll actually use this is fairly slim.
+But it's much easier to allow for that now and perhaps remove the
+flexibility later if it's not needed, rather than to bolt it on later
+and having to worry about interoperability.
+-->
 
 Alternatively, label metadata can be serialized as objects in a
 [JSON](https://datatracker.ietf.org/doc/html/rfc8259) array.
@@ -77,6 +89,11 @@ For consistency, the preferred order of records in both cases is to sort
 ascending by `country` and by `text`.
 Records without country code should instead come last, sorted by `token`.
 Within each country, records with `kind = unnamed` should always come last.
+
+<!--
+It's admittedly a bit convoluted, but it seems to work well in practice
+during editing.
+-->
 
 ## Attributes
 
@@ -113,6 +130,11 @@ However, if the full name is quite unwieldy or even obscure in the real
 world, abbreviating it may sometimes be better after all.
 The `remarks` attribute may be used to write down the rationale.
 
+<!--
+For example, the search feature in web maps should probably show and accept
+the full name, even when the name shown on the map itself is abbreviated.
+-->
+
 ### easting / southing
 
     easting: number
@@ -123,6 +145,13 @@ The *adjusted* position for this label, if any.
 Many labels will use the position included with a mileage target. These
 attributes should only be present in the metadata in cases where the mileage
 target position is inadequate; otherwise, they should be missing.
+
+<!--
+For software that doesn't have good support for south-oriented coordinate
+systems, a `northing` attribute may be used instead of or in addition to
+`southing`. These attributes differ only in the sign. In order to make
+interoperability easier, `northing` shouldn't be used for data exchange.
+-->
 
 ### kind
 
@@ -147,6 +176,16 @@ necessarily limited to) the following:
 * `unnamed`: Mileage target location with no name, e.g. "US-160 x US-183", KS.
     Mileage targets without a name are generally unusable as map labels and
     should be filtered out by data users.
+
+<!--
+Possible additions:
+* `area`: Indian reservation etc. (but, like forests: generally don't include them; signs are sporadic and roads often meander in and out of them, so it's difficult to keep track of)
+* `industrial`: Named industrial site (are there any? SCS tends to avoid such names)
+
+Differentiations:
+- `hamlet`: smaller than a town, tiny number of houses, often no infrastructure; maybe the cut-off is at around 6 houses or so
+- parking vs. nature location: the importance of the nature location is a factor; e.g. Beaver Rim WY is `parking`, Hell's Half Acre WY is `nature` (it's subjective though)
+-->
 
 This dataset doesn't claim to be complete, *especially* not for locations
 that aren't scenery towns.
@@ -189,6 +228,14 @@ But there are exceptions, for example where the only road is a
 freeway and there are no usable exits to the location.
 If there is no sign, the same principle is applied, but with respect
 to the point where you would normally expect the sign to be.
+
+<!--
+Many non-town locations are unreachable by nature, for example natural
+features: You can't drive a vehicle off-road. To avoid `access` being
+entirely meaningless for such locations, the ability to access dedicated
+parking should be considered instead. Such a parking area is effectively
+the "core" of the feature as far as road users are concerned.
+-->
 
 In some cases, assessing this attribute will require some subjective judgement,
 which may also have to be adjusted over time as more experience with this

@@ -18,8 +18,8 @@ All attributes are optional.
 - [`country`](#country)
 - [`show`](#show)
 - [`checked`](#checked)
-- [`ref`](#ref)
 - [`remark`](#remark)
+- [`ref`](#ref)
 
 **Attributes are missing** in cases where information garnered from analyzing
 mileage targets should be used instead if available, for example because the
@@ -43,8 +43,8 @@ fields. Ordering the columns in the same order in which the attributes are
 defined in this document is recommended.
 
 ```csv
-token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,ref,remark
-wy_yellowsth,,-58854,-37767,nature,all,"yes",~,jackson,US-WY,no,2025-02,,ST drop-off only
+token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+wy_yellowsth,,-58854,-37767,nature,all,"yes",~,jackson,US-WY,no,2025-02,ST drop-off only,
 ...
 ```
 
@@ -335,17 +335,6 @@ necessary; the date formats `YYYY` or `YYYY-MM` should be adequate.
 Checking / assessing usually requires looking at the in-game location using
 the dev cam.
 
-### ref
-
-    ref: unknown
-
-Reference to real-life information about the labeled entity.
-Not currently used; reserved for future expansion.
-
-The format isn't defined yet, but it'll probably be a string.
-For example, the value could be a URI such as a Wikipedia link or
-maybe a [GeoNames](https://www.geonames.org) record ID.
-
 ### remark
 
     remark: string
@@ -357,3 +346,14 @@ remarks are less readable and should be avoided.
 Can also be used to store additional data using micro-formats. For example, if
 the remark of a mountain pass label begins with something like `8724ft`, it's
 probably the pass elevation.
+
+### ref
+
+    ref: unknown
+
+Reference to real-life information about the labeled entity.
+Not currently used; reserved for future expansion.
+
+The format isn't defined yet, but it'll probably be a string.
+For example, the value could be a URI such as a Wikipedia link or
+maybe a [GeoNames](https://www.geonames.org) record ID.

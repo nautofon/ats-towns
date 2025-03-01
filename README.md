@@ -21,16 +21,19 @@ This repository was created in order to allow the
 [ATS Slippy Map](https://forum.scssoft.com/viewtopic.php?t=318267)
 to add an extra layer showing scenery towns.
 Initially, town positions were recorded manually using the game's
-"bugs.txt" feature. The result was placed into subdirectories in this
-repository, sorted by state.
-
-Going forward, the subdirectories will no longer be systematically
-maintained. The `all-towns.geojson` file, which is used by Trucker
-Mudgeon's map, will be the only supported output format. The
-subdirectories will eventually disappear from the `main` branch.
-They are archived in the `towns-txt` branch.
+bug reporting feature.
+That dataset has been removed from this branch. It's been archived on the
+[`towns-txt`](https://github.com/nautofon/ats-towns/tree/towns-txt) branch,
+along with some documentation and tools that probably are no longer relevant.
 
 ### Usage
+
+> [!CAUTION]  
+> At this point, the `all-towns.geojson` file only exists for the benefit of
+> [Trucker Mudgeon's ATS Map](https://github.com/truckermudgeon/truckermudgeon.github.io).
+> A future update to the map is expected to include an equivalent file directly
+> rather than load it from here. Once that change happens, the file will be
+> removed from this repository.
 
 To use this metadata, you first need to apply it to the game's
 mileage targets dataset in the manner explained in the

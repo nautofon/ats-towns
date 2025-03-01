@@ -1,19 +1,28 @@
-## ATS scenery towns
+## ATS map label metadata
 
-This repository offers the coordinates of scenery towns in ATS.
-It was created in order to allow the
+This repository offers metadata that refines map labels generated from
+[ATS](https://americantrucksimulator.com/) mileage targets.
+The metadata is designed to be used with the `extra-labels` generator in
+**Trucker Mudgeon**'s [TruckSim Maps](https://github.com/truckermudgeon/maps)
+project.
+
+Mileage targets for ATS are fairly homogeneous when it comes to towns:
+Most ATS settlements have mileage targets, and few named mileage targets
+represent destinations that aren't settlements. By filtering unnamed
+targets and marked cities heuristically, the `extra-labels` generator can
+produce tolerable map labels for scenery towns even without any metadata.
+It can optionally use the metadata offered here to improve its results.
+
+The primary focus of this metadata is currently scenery towns.
+But the game contains a lot of named features other than towns.
+The scope of the dataset may eventually be expanded beyond towns.
+
+This repository was created in order to allow the
 [ATS Slippy Map](https://forum.scssoft.com/viewtopic.php?t=318267)
-by [**@truckermudgeon**](https://github.com/truckermudgeon)
 to add an extra layer showing scenery towns.
-
 Initially, town positions were recorded manually using the game's
 "bugs.txt" feature. The result was placed into subdirectories in this
 repository, sorted by state.
-
-As of early 2024, there is a plan to base this dataset largely on
-mileage target data. The goal is to improve the efficiency of creating
-and maintaining the dataset.
-See [ATS slippy map ideas](https://gist.github.com/nautofon/d6b3fb841f632478c6db6f0d7f00231e/6027e27045464cfc0409ad144541f6d5f8e19d5e#mileage-targets).
 
 Going forward, the subdirectories will no longer be systematically
 maintained. The `all-towns.geojson` file, which is used by Trucker
@@ -21,36 +30,35 @@ Mudgeon's map, will be the only supported output format. The
 subdirectories will eventually disappear from the `main` branch.
 They are archived in the `towns-txt` branch.
 
-### Criteria for scenery towns
+### Usage
 
-A "scenery town" in ATS is defined for this repository as any location
-which is not a marked city on the in-game world map and which meets both
-of the following criteria:
+To use this metadata, you first need to apply it to the game's
+mileage targets dataset in the manner explained in the
+[Label Metadata Description](label-metadata.md).
+One way to do that is with the `extra-labels` generator in Trucker Mudgeon's
+[TruckSim Maps](https://github.com/truckermudgeon/maps) project.
 
-- Buildings exist in the game world.  
-  *Any kind of buildings will do, even commercial or abandoned ones.*
+```sh
+# Convert metadata CSV into JSON and generate map labels GeoJSON
+# for display on Trucker Mudgeon's ATS Map
+script/csv2json.pl US/*.csv > ../maps/usa-labels-meta.json
+cd ../maps
+npx generator extra-labels --meta usa-labels-meta.json \
+  -i dirWithParserOutput -o ../ats-towns
 
-- The place name exists in the game world.  
-  *This usually means the exact name must appear on a green road sign.
-  Any deducing of place names from e.g. building names or other indirect
-  sources should be avoided, except where the situation is super obvious.*
+# Generate metadata CSV template from ATS mileage targets
+# for a single state (e.g. newly released DLC)
+npx generator extra-labels --json --no-meta \
+  -i dirWithParserOutput -o ../ats-towns
+cd ../ats-towns
+script/json2csv.pl extra-labels.json --country US-NE > US/US-NE.csv
+```
 
-Additionally, the following locations are included if named because of their
-navigational value, even where no buildings exist:
+### Author
 
-- Highway junctions
-- Mountain passes and prominent bridges/tunnels
+Created and maintained by **nautofon**.
 
-I'm absolutely open to discuss changes to these criteria. The
-[ATS Slippy Map thread](https://forum.scssoft.com/viewtopic.php?t=318267)
-might be the best place to have such a discussion. Feel free to tag me there
-(`@nautofon`).
-
-### Future work
-
-At least mountain passes should probably be in another dataset instead of
-this one. They might be removed here if such a dataset becomes available
-separately in future.
-
-Beyond that, it might be interesting to expand this idea to other POIs,
-such as historical markers, rest areas, or viewpoints.
+Feedback, issue reports, and other contributions are welcome.
+Please post any comments or questions in Trucker Mudgeon's SCS forum thread
+["A Slippy Map for ATS"](https://forum.scssoft.com/viewtopic.php?t=318267).
+(Or send a PM to `nautofon`, if you prefer.)

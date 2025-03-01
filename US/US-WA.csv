@@ -1,0 +1,7 @@
+token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+wa_coupferry,Coupeville Ferry,,,,,,,,US-WA,no,,,
+wa_diablo,Diablo,,,,,,,,US-WA,no,,,
+wa_ritzvill2,,,,,,,,,,no,,,
+wa_ritzville,Ritzville,-85720,-56760,town,,,,,US-WA,yes,,,
+wa_snoquales,Snoqualmie Pass,-95313,-61286,pass,,,,,US-WA,yes,,,
+wa_snoqualwe,,,,,,,,,,no,,,

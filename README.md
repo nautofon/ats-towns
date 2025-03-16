@@ -35,6 +35,13 @@ along with some documentation and tools that probably are no longer relevant.
 > rather than load it from here. Once that change happens, the file will be
 > removed from this repository.
 
+> [!IMPORTANT]  
+> At time of this writing, the review of the `extra-labels` generator is
+> ongoing. To actually run the generator, you may need to check out the
+> [`extra-labels`](https://github.com/nautofon/maps-nodejs/tree/extra-labels)
+> branch in nautofon's fork. Note that the interface of the generator may end
+> up being slightly different in the final merged version.
+
 To use this metadata, you first need to apply it to the game's
 mileage targets dataset in the manner explained in the
 [Label Metadata Description](label-metadata.md).

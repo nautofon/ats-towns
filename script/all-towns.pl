@@ -126,6 +126,9 @@ Produce the F<all-towns.geojson> legacy file from C<extra-labels> output.
 
 The features in the output are sorted by state and name.
 
+This script has no prerequisites other than perl itself
+(v5.14 or later), so it should run pretty much anywhere.
+
 =head1 OPTIONS
 
 =over

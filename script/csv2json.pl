@@ -1,13 +1,55 @@
 #! /usr/bin/env perl
 
-use v5.12;
+use v5.14;
 use warnings;
 use open ':std', IO => ':encoding(UTF-8)';
 
 use Getopt::Long 2.33 qw( GetOptions :config gnu_getopt );
 use JSON::PP ();
 use Pod::Usage qw( pod2usage );
-use Text::CSV qw( csv );
+
+sub read_text {
+  my ($file) = @_;
+  local $/;
+  open my $fh, '<', $file or die "$file: $!";
+  scalar <$fh>
+}
+
+sub csv {
+  my %params = @_;
+  my (@records, @fields, $quoted);
+  my $field = '';
+
+  CHAR:
+  for my $char ( split m//, read_text $params{in} ) {
+    $quoted = ! $quoted if $char eq '"';
+    if (! $quoted && $char eq ',') {
+      $field =~ s{ \A" (.*) "\z }{ $1 =~ s("")(")gr }ex;
+      push @fields, $field;
+      $field = '';
+      next CHAR;
+    }
+    if (! $quoted && $char =~ m/\v/) {
+      push @records, [@fields, $field] if length $field || @fields;
+      @fields = ();
+      $field = '';
+      next CHAR;
+    }
+    $field .= $char;
+  }
+
+  my $headers = shift @records;
+  die 'Varying field counts in CSV' if grep { @$headers != @$_ } @records;
+  die 'Unescaped quote in CSV' if $quoted;
+  die 'No line break after last record in CSV' if length $field || @fields;
+
+  # Yield array ref of hash refs (like Text::CSV headers => 'auto')
+  @records = map {
+    my $record = $_;
+    +{ map {( $headers->[$_] => $record->[$_] )} 0 .. $#$headers }
+  } @records;
+  return \@records;
+}
 
 my @attributes = qw(
   token
@@ -45,7 +87,7 @@ pod2usage -verbose => 2 if $opts{help};
 pod2usage unless @ARGV;
 
 my @metas = map {
-  @{ csv headers => 'auto', in => $_ }
+  @{ csv in => $_ }
 } @ARGV;
 
 for my $meta (@metas) {
@@ -95,6 +137,9 @@ Convert serialized map label metadata from CSV to JSON format.
 The conversion result is printed to standard output by default.
 The record order in the output is the same as that in the input.
 Input and output are in UTF-8, irrespective of the locale.
+
+This script has no prerequisites other than perl itself
+(v5.14 or later), so it should run pretty much anywhere.
 
 =head1 OPTIONS
 

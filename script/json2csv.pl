@@ -1,14 +1,42 @@
 #! /usr/bin/env perl
 
-use v5.12;
+use v5.14;
 use warnings;
 use open ':std', OUT => ':encoding(UTF-8)';
 
-use File::Slurper qw( read_binary );
 use Getopt::Long 2.33 qw( GetOptions :config gnu_getopt );
 use JSON::PP qw( decode_json );
 use Pod::Usage qw( pod2usage );
-use Text::CSV qw( csv );
+use Socket qw( CRLF );
+
+sub read_binary {
+  my ($file) = @_;
+  local $/;
+  open my $fh, '<:raw', $file or die "$file: $!";
+  scalar <$fh>
+}
+
+sub csv {
+  my %params = @_;
+  my ($headers, $records, $fh) = ($params{headers}, $params{in}, $params{out});
+
+  local $, = ',';
+  print $fh @$headers;
+  print $fh CRLF;
+
+  # Expect array ref of hash refs
+  for my $record (@$records) {
+    my @fields = map { $record->{$_} // '' } @$headers;
+    for (@fields) {
+      next unless /[,"\v]/;
+      s/"/""/g;
+      s/\A/"/;
+      s/\z/"/;
+    }
+    print $fh @fields;
+    print $fh CRLF;
+  }
+}
 
 my @attributes = qw(
   token
@@ -97,6 +125,9 @@ Convert serialized map label metadata from JSON to CSV format.
 The conversion result is printed to standard output by default.
 The record order in the output is the same as that in the input.
 Input and output are in UTF-8, irrespective of the locale.
+
+This script has no prerequisites other than perl itself
+(v5.14 or later), so it should run pretty much anywhere.
 
 =head1 OPTIONS
 

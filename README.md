@@ -28,13 +28,6 @@ along with some documentation and tools that probably are no longer relevant.
 
 ### Usage
 
-> [!CAUTION]  
-> At this point, the `all-towns.geojson` file only exists for the benefit of
-> [Trucker Mudgeon's ATS Map](https://github.com/truckermudgeon/truckermudgeon.github.io).
-> A future update to the map is expected to include an equivalent file directly
-> rather than load it from here. Once that change happens, the file will be
-> removed from this repository.
-
 > [!IMPORTANT]  
 > At time of this writing, the review of the `extra-labels` generator is
 > ongoing. To actually run the generator, you may need to check out the

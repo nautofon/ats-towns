@@ -28,13 +28,6 @@ along with some documentation and tools that probably are no longer relevant.
 
 ### Usage
 
-> [!IMPORTANT]  
-> At time of this writing, the review of the `extra-labels` generator is
-> ongoing. To actually run the generator, you may need to check out the
-> [`extra-labels`](https://github.com/nautofon/maps-nodejs/tree/extra-labels)
-> branch in nautofon's fork. Note that the interface of the generator may end
-> up being slightly different in the final merged version.
-
 To use this metadata, you first need to apply it to the game's
 mileage targets dataset in the manner explained in the
 [Label Metadata Description](label-metadata.md).
@@ -65,3 +58,15 @@ Feedback, issue reports, and other contributions are welcome.
 Please post any comments or questions in Trucker Mudgeon's SCS forum thread
 ["A Slippy Map for ATS"](https://forum.scssoft.com/viewtopic.php?t=318267).
 (Or send a PM to `nautofon`, if you prefer.)
+
+### See also
+
+TruckSim Maps project by **Trucker Mudgeon**:
+
+- Demo apps:
+    [`truckermudgeon.github.io`](https://truckermudgeon.github.io/) ·
+    [`routes`](https://truckermudgeon.github.io/routes)
+- Repositories:
+    [`maps`](https://github.com/truckermudgeon/maps) · 
+    [`truckermudgeon.github.io`](https://github.com/truckermudgeon/truckermudgeon.github.io)
+- SCS forum: [A Slippy Map for ATS](https://forum.scssoft.com/viewtopic.php?t=318267)

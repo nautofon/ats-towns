@@ -1,2 +1,5 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
-ca_ggbridge,Golden Gate Bridge,,,,,,,,US-CA,yes,,,
+ca_crestw,Crestwood Summit,,,pass,,,,,US-CA,yes,,,
+ca_ggbridge,Golden Gate Bridge,,,bridge,,,,,US-CA,yes,,,
+ca_lassenpk,Lassen Park,,,nature,remote,no,,,US-CA,no,2024,,
+ca_tiogapass,Tioga Pass,,,pass,,,,,US-CA,yes,,,

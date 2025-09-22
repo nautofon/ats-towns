@@ -333,7 +333,8 @@ May be used in future to prioritize dataset maintenance. High precision isn't
 necessary; the date formats `YYYY` or `YYYY-MM` should be adequate.
 
 Checking / assessing usually requires looking at the in-game location using
-the dev cam.
+the dev cam. If the installed game version isn't current, the year of that
+version's release should be used here.
 
 ### remark
 

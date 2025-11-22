@@ -65,6 +65,8 @@ TruckSim Maps project by **Trucker Mudgeon**:
 
 - Demo apps:
     [`truckermudgeon.github.io`](https://truckermudgeon.github.io/) ·
+    [`brackenreach`](https://truckermudgeon.github.io/brackenreach) ·
+    [`winterland`](https://truckermudgeon.github.io/winterland) ·
     [`routes`](https://truckermudgeon.github.io/routes)
 - Repositories:
     [`maps`](https://github.com/truckermudgeon/maps) · 

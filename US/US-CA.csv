@@ -1,4 +1,5 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+ca_burney,Burney,-107672,-26613,town,,,,,US-CA,yes,,,
 ca_crestw,Crestwood Summit,,,pass,,,,,US-CA,yes,,,
 ca_ggbridge,Golden Gate Bridge,,,bridge,,,,,US-CA,yes,,,
 ,Hilt,-110127,-32422,city,,,,hilt,US-CA,no,,,

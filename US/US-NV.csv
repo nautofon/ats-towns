@@ -1,3 +1,4 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 nv_denio,Denio,,,,,,,,US-NV,no,,,
+nv_hoover,Hoover Dam,-81491,7571,dam,yes,all,no,,US-NV,yes,2026-02,,
 nv_sparksi80,Sparks,,,town,,,,,US-NV,yes,,,

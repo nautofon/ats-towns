@@ -1,4 +1,11 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+nv_austin,Austin,-91168,-13707,,,,,,US-NV,yes,,coordinates deleted in 1.59 rework leak,
+nv_alamo,Alamo,,,,,,,,US-NV,no,,coordinates added in 1.59 rework leak,
+nv_battlemtn,Battle Mountain,-89284,-21993,,,,,,US-NV,yes,,coordinates moved in 1.59 rework leak,
+nv_caliente,Caliente,,,,,,,,US-NV,no,,coordinates added in 1.59 rework leak,
+nv_carlin,Carlin,,,,,,,,US-NV,no,,coordinates added in 1.59 rework leak,
 nv_denio,Denio,,,,,,,,US-NV,no,,,
+nv_fallon,Fallon,,,,,,,,US-NV,no,,coordinates added in 1.59 rework leak,
 nv_hoover,Hoover Dam,-81491,7571,dam,yes,all,no,,US-NV,yes,2026-02,,
-nv_sparksi80,Sparks,,,town,,,,,US-NV,yes,,,
+nv_lovelock,Lovelock,,,,,,,,US-NV,no,,coordinates added in 1.59 rework leak,
+nv_rachel,Rachel,-86645,-748,,,,,,US-NV,yes,,coordinates moved in 1.59 rework leak,

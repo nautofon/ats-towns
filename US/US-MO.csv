@@ -1,4 +1,7 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+,Hayti,28320,13842,exit,all,no,no,,US-MO,yes,2026-06,,
 mo_stjoseph,Saint Joseph,,,city,,,,st_joseph,US-MO,no,,,
 mo_stlouis,Saint Louis,,,city,,,,st_louis,US-MO,no,,,
-,Strafford,14678,8575,,,,,,US-MO,yes,,,
+,Scott City,29116,9703,,,,yes,cape_girarde,US-MO,yes,,,
+,Strafford,14678,8575,,,,yes,springfield,US-MO,yes,,,
+,Wentzville,28320,13842,,,,,,US-MO,yes,,pure guesswork,

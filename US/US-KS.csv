@@ -1,4 +1,6 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 ,Elwood,3343,-4805,,,,,,US-KS,yes,,,
+ks_kanorado,Kanorado,-25150,-3520,,,,,,US-KS,yes,,,
 ,Kansas City,5931,-987,city,,,,kansas_ci_ks,US-KS,no,,,
+ks_mcphers,McPherson,-7740,3090,,,,,,US-KS,yes,,,
 ,South Hutchinson,-10107,5497,,,,,hutchinson,US-KS,yes,,,

@@ -1,7 +1,7 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 ,Akela,-55728,34153,,,,,,US-NM,,2023-04,,
 nm_albuquerq,Albuquerque,,,city,,,,albuquerque,US-NM,no,2026-02,,
-,Augustina Pass,-49738,34018,,,,,,US-NM,,2023-04,,
+,Augustina Pass,-49738,34018,pass,all,yes,no,,US-NM,yes,2026-06,5719ft,
 nm_bloomfiel,Bloomfield,-53282,9011,,,,,,US-NM,,2023-04,,
 nm_carlscav,Carlsbad Caverns,,,,,no,,,US-NM,no,,,
 ,Carunel,-45050,19920,town,all,yes,no,,US-NM,yes,2026-02,"ATS uses the spelling ""Carunel"" as of 1.59, although the real-life town is spelled ""Carnuel""",

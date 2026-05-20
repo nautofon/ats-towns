@@ -1,5 +1,6 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 wa_coupferry,Coupeville Ferry,,,,,,,,US-WA,no,,,
+wa_deception,Deception Pass,,,nature,,,,,US-WA,yes,,,
 wa_diablo,Diablo,,,,,,,,US-WA,no,,,
 ,Grand Coulee,-86528,-62695,city,,,,grand_coulee,US-WA,no,,,
 ,Pasco,-89492,-53351,,,,,kennewick,US-WA,yes,,,
@@ -7,4 +8,6 @@ wa_ritzvill2,,,,,,,,,,no,,,
 wa_ritzville,Ritzville,-85720,-56760,town,,,,,US-WA,yes,,,
 wa_snoquales,Snoqualmie Pass,-95313,-61286,pass,,,,,US-WA,yes,,,
 wa_snoqualwe,,,,,,,,,,no,,,
+wa_stevenspa,Stevens Pass,,,pass,,,,,US-WA,yes,,,
 ,Welcome,-96533,-69960,,,,,,US-WA,yes,,named Wickersham until 1.44,
+wa_whitepass,White Pass,,,pass,,,,,US-WA,yes,,,

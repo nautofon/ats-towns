@@ -1,5 +1,9 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+,Basque,-89896,-31188,hamlet,,,,,US-OR,yes,,,
+,Blue Mountain Pass,-89926,-30898,pass,,,,,US-OR,yes,,5293ft,
+,Mount Vernon,-92233,-42490,hamlet,,,,,US-OR,yes,,hamlet only in contrast to John Day,
 or_porti5n,Portland,,,city,,,,portland,US-OR,no,,,
 or_porti5s,Portland,,,city,,,,portland,US-OR,no,,,
 or_porti84w,Portland,,,city,,,,portland,US-OR,no,,,
 or_porlus30e,Portland,,,city,,,,portland,US-OR,no,,,
+,Springfield,-106884,-44029,,,,,eugene,US-OR,yes,,,

@@ -1,8 +1,10 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 tx_abileni20,Abilene,,,city,,,,abilene,US-TX,no,,,
+,Anthony,-50760,36965,,,,,,US-TX,yes,,,
 tx_longvie80,Longview,,,city,,,,longview_tx,US-TX,no,,,
 tx_lubbi27,Lubbock,,,city,,,,lubbock,US-TX,no,,,
 tx_lubbus62,Lubbock,,,city,,,,lubbock,US-TX,no,,,
 tx_mineola,Mineola,,,,,,,,US-TX,no,,,
+,Mont Belvieu,5970,51010,,,,,,US-TX,yes,,,
 tx_sananti10,San Antonio,,,city,,,,san_antonio,US-TX,no,,,
 ,Texarkana,9048,30642,city,,,,texarkana,US-TX,no,,,

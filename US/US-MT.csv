@@ -1,2 +1,4 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 can_usa_93,Canada / USA Border,,,unnamed,,,,,CA,no,,,
+,Evergreen,-69120,-60153,,,,,kalispell,US-MT,yes,,,
+,Marias Pass,-65384,-58771,pass,,,,,US-MT,yes,,5216ft,

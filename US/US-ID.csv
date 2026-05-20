@@ -1,5 +1,13 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+,Butte City,-69669,-33400,,,,,,US-ID,yes,,,
+,Ellis,-71338,-40748,hamlet,,,,,US-ID,yes,,,
+,Inkom,-66122,-26738,,,,,pocatello,US-ID,yes,,,
 ,Ketchum,-73986,-34871,city,,,,ketchum,US-ID,no,,,
+,Lower Stanley,-75883,-38100,hamlet,,,,,US-ID,yes,,,
+,Macks Inn,-61691,-37006,,,,,,US-ID,no,,"new name: Island Park",
 or_montpel,Montpelier,,,,,,,,US-ID,,,,
 or_ovid,Ovid,,,,,,,,US-ID,,,,
 or_payette,Payette,,,,,,,,US-ID,,,,
+,Ponderay,-76522,-62895,,,,,sandpoint,US-ID,yes,,,
+,Tollgate,-77865,-33293,historic,,,,,US-ID,yes,,,
+,Willow Creek Summit,-71381,-36422,pass,,,,,US-ID,yes,,7160ft,

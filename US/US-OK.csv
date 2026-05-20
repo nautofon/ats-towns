@@ -1,4 +1,6 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
+,Cushing,-4230,15970,town,all,yes,yes,oklahoma_cit,US-OK,yes,2026-05,,
 ok_miami,Miami,4899,11834,,,,,,US-OK,yes,,,
 ok_muldrow,Muldrow,,,,,,,,US-OK,no,,,
+,Prague,-3090,18690,town,all,yes,no,,US-OK,yes,2026-06,,
 ok_tonkawa,Tonkawa,,,,,,,,US-OK,no,,,

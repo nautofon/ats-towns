@@ -1,5 +1,6 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 ne_hcr,Harlan County Reservoir,,,,,,,,US-NE,no,,,
 ne_lak,Lake McConaughy,,,,,,,,US-NE,no,,,
+,Louisville,-1575,-10187,,,,,omaha,US-NE,yes,,,
 ne_nnf,Nebr Natl Forest,,,,,,,,US-NE,no,,,
 ne_npm,Nebraska Prairie Museum,,,,,,,,US-NE,no,,,

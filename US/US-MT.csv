@@ -1,5 +1,6 @@
 token,text,easting,southing,kind,signed,access,industry,city,country,show,checked,remark,ref
 can_usa_93,Canada / USA Border,,,unnamed,,,,,CA,no,,,
+,Black Eagle,-57830,-55150,hood,all,yes,no,great_falls,US-MT,yes,2026-05,,
 ,Evergreen,-69120,-60153,,,,,kalispell,US-MT,yes,,,
 ,Marias Pass,-65384,-58771,pass,,,,,US-MT,yes,,5216ft,
 ,Silver Bow,-68040,-45880,exit,all,no,yes,butte,US-MT,yes,2026-06,,

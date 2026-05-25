@@ -163,6 +163,7 @@ necessarily limited to) the following:
 * `city`: Marked city, e.g. Bakersfield, CA.
 * `town`: Unmarked scenery town, urban district, or other settlement, e.g. Buttonwillow, CA.
 * `hamlet`: Like `town`, but *tiny*, e.g. Hiland, WY.
+* `hood`: Like `town`, but *inside* another town or city, e.g. Black Eagle, MT.
 * `bridge`: Notable bridge, e.g. Golden Gate Bridge, CA.
 * `tunnel`: Notable tunnel, e.g. Collier Tunnel, CA.
 * `pass`: Mountain pass, e.g. Crestwood Summit, CA.

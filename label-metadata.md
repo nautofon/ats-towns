@@ -167,6 +167,7 @@ necessarily limited to) the following:
 * `tunnel`: Notable tunnel, e.g. Collier Tunnel, CA.
 * `pass`: Mountain pass, e.g. Crestwood Summit, CA.
 * `junction`: Named but unpopulated intersection, e.g. Muddy Gap, WY.
+* `exit`: Name derived from interchange signage or similar (possibly ambiguous), e.g. Crockett, CA.
 * `port`: Unpopulated ferry port, e.g. Port Bolivar, TX.
 * `dam`: Notable dam or reservoir, e.g. Broken Bow Dam, OK.
 * `parking`: Named turnout, wayside, scenic overlook, or other parking area (may or may not have sleep functionality), e.g. Snake River Picnic Area, WY.
